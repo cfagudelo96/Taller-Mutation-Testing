@@ -1,0 +1,429 @@
+MUTANT 1:	RAEM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('todomvc', ['ngResource'])'`
+MUTANT 2:	RAEM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('todomvc', ['ngRoute'])'`
+MUTANT 3:	RFCAM src/app.js Line 9:	`.config(function ($routeProvider) {` > `.config(config(function ($routeProvider) {'`
+MUTANT 4:	RFCAM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module(['ngRoute', 'ngResource'])'`
+MUTANT 5:	RFCAM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('todomvc')'`
+MUTANT 6:	RFCAM src/app.js Line 18:	`return todoStorage.then(function (module) {` > `return todoStorage.then(eturn todoStorage.then(function (module) {'`
+MUTANT 7:	RFCAM src/app.js Line 29:	`.otherwise({` > `.otherwise(otherwise({'`
+MUTANT 8:	RFCAM src/app.js Line 28:	`.when('/:status', routeConfig)` > `.when(routeConfig)'`
+MUTANT 9:	RFCAM src/app.js Line 28:	`.when('/:status', routeConfig)` > `.when('/:status')'`
+MUTANT 10:	RFCAM src/app.js Line 27:	`.when('/', routeConfig)` > `.when(routeConfig)'`
+MUTANT 11:	RFCAM src/app.js Line 27:	`.when('/', routeConfig)` > `.when('/')'`
+MUTANT 12:	RFM Lines 9-32: Commented function (anonymous / assigned)
+MUTANT 13:	RFM Lines 16-22: Commented function (anonymous / assigned)
+MUTANT 14:	RFM Lines 18-21: Commented function (anonymous / assigned)
+MUTANT 15:	RLM Commented line 19:	module.get(); // Fetch the todo records in the background.
+MUTANT 16:	RLM Commented line 20:	return module;
+MUTANT 17:	ROPM src/app.js Line 13:	`controller: 'TodoCtrl',` > `'`
+MUTANT 18:	ROPM src/app.js Line 14:	`templateUrl: 'todomvc-index.html',` > `'`
+MUTANT 19:	ROPM Lines 15-23: Commented property resolve
+MUTANT 20:	ROPM Lines 16-22: Commented property store
+MUTANT 21:	ROPM src/app.js Line 30:	`redirectTo: '/'` > `'`
+MUTANT 22:	SLM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('', ['ngRoute', 'ngResource'])'`
+MUTANT 23:	SLM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('JpQ3hQA', ['ngRoute', 'ngResource'])'`
+MUTANT 24:	SLM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('todomvc', ['', 'ngResource'])'`
+MUTANT 25:	SLM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('todomvc', ['ZUwR2Tf', 'ngResource'])'`
+MUTANT 26:	SLM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('todomvc', ['ngRoute', ''])'`
+MUTANT 27:	SLM src/app.js Line 8:	`angular.module('todomvc', ['ngRoute', 'ngResource'])` > `angular.module('todomvc', ['ngRoute', 'M1LiG99BE7'])'`
+MUTANT 28:	SLM src/app.js Line 13:	`controller: 'TodoCtrl',` > `controller: '','`
+MUTANT 29:	SLM src/app.js Line 13:	`controller: 'TodoCtrl',` > `controller: 'UAZO33Nh','`
+MUTANT 30:	SLM src/app.js Line 14:	`templateUrl: 'todomvc-index.html',` > `templateUrl: '','`
+MUTANT 31:	SLM src/app.js Line 14:	`templateUrl: 'todomvc-index.html',` > `templateUrl: 'DOLIfJW8a5oZ1stM7y','`
+MUTANT 32:	SLM src/app.js Line 27:	`.when('/', routeConfig)` > `.when('', routeConfig)'`
+MUTANT 33:	SLM src/app.js Line 27:	`.when('/', routeConfig)` > `.when('J', routeConfig)'`
+MUTANT 34:	SLM src/app.js Line 28:	`.when('/:status', routeConfig)` > `.when('', routeConfig)'`
+MUTANT 35:	SLM src/app.js Line 28:	`.when('/:status', routeConfig)` > `.when('iHxoc1pG', routeConfig)'`
+MUTANT 36:	SLM src/app.js Line 30:	`redirectTo: '/'` > `redirectTo: '''`
+MUTANT 37:	SLM src/app.js Line 30:	`redirectTo: '/'` > `redirectTo: 'E''`
+MUTANT 38:	BLM src/controllers/todoCtrl.js Line 18:	`$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;` > `$scope.remainingCount = $filter('filter')(todos, { completed: true }).length;'`
+MUTANT 39:	BLM src/controllers/todoCtrl.js Line 21:	`}, true);` > `}, false);'`
+MUTANT 40:	BLM src/controllers/todoCtrl.js Line 27:	`{ completed: false } : (status === 'completed') ?` > `{ completed: true } : (status === 'completed') ?'`
+MUTANT 41:	BLM src/controllers/todoCtrl.js Line 28:	`{ completed: true } : {};` > `{ completed: false } : {};'`
+MUTANT 42:	BLM src/controllers/todoCtrl.js Line 34:	`completed: false` > `completed: true'`
+MUTANT 43:	BLM src/controllers/todoCtrl.js Line 41:	`$scope.saving = true;` > `$scope.saving = false;'`
+MUTANT 44:	BLM src/controllers/todoCtrl.js Line 47:	`$scope.saving = false;` > `$scope.saving = true;'`
+MUTANT 45:	BLM src/controllers/todoCtrl.js Line 93:	`$scope.reverted = true;` > `$scope.reverted = false;'`
+MUTANT 46:	MM src/controllers/todoCtrl.js Line 19:	`$scope.completedCount = todos.length - $scope.remainingCount;` > `$scope.completedCount = todos.length + $scope.remainingCount;'`
+MUTANT 47:	NCM src/controllers/todoCtrl.js Line 26:	`$scope.statusFilter = (status === 'active') ?` > `$scope.statusFilter = (status !== 'active') ?'`
+MUTANT 48:	NCM src/controllers/todoCtrl.js Line 27:	`{ completed: false } : (status === 'completed') ?` > `{ completed: false } : (status !== 'completed') ?'`
+MUTANT 49:	NCM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event !== 'blur' && $scope.saveEvent === 'submit') {'`
+MUTANT 50:	NCM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event === 'blur' && $scope.saveEvent !== 'submit') {'`
+MUTANT 51:	NCM src/controllers/todoCtrl.js Line 75:	`if (todo.title === $scope.originalTodo.title) {` > `if (todo.title !== $scope.originalTodo.title) {'`
+MUTANT 52:	NCM src/controllers/todoCtrl.js Line 120:	`if (todo.completed !== completed) {` > `if (todo.completed === completed) {'`
+MUTANT 53:	RCM src/controllers/todoCtrl.js Line 26:	`$scope.statusFilter = (status === 'active') ?` > `$scope.statusFilter = (true) ?'`
+MUTANT 54:	RCM src/controllers/todoCtrl.js Line 26:	`$scope.statusFilter = (status === 'active') ?` > `$scope.statusFilter = (false) ?'`
+MUTANT 55:	RCM src/controllers/todoCtrl.js Line 27:	`{ completed: false } : (status === 'completed') ?` > `{ completed: false } : (true) ?'`
+MUTANT 56:	RCM src/controllers/todoCtrl.js Line 27:	`{ completed: false } : (status === 'completed') ?` > `{ completed: false } : (false) ?'`
+MUTANT 57:	RCM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (true && $scope.saveEvent === 'submit') {'`
+MUTANT 58:	RCM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (false && $scope.saveEvent === 'submit') {'`
+MUTANT 59:	RCM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event === 'blur' && true) {'`
+MUTANT 60:	RCM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event === 'blur' && false) {'`
+MUTANT 61:	RCM src/controllers/todoCtrl.js Line 75:	`if (todo.title === $scope.originalTodo.title) {` > `if (true) {'`
+MUTANT 62:	RCM src/controllers/todoCtrl.js Line 75:	`if (todo.title === $scope.originalTodo.title) {` > `if (false) {'`
+MUTANT 63:	RCM src/controllers/todoCtrl.js Line 120:	`if (todo.completed !== completed) {` > `if (true) {'`
+MUTANT 64:	RCM src/controllers/todoCtrl.js Line 120:	`if (todo.completed !== completed) {` > `if (false) {'`
+MUTANT 65:	RFCAM src/controllers/todoCtrl.js Line 9:	`.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {` > `.controller(function TodoCtrl($scope, $routeParams, $filter, store) {'`
+MUTANT 66:	RFCAM src/controllers/todoCtrl.js Line 9:	`.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {` > `.controller('TodoCtrl'controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {'`
+MUTANT 67:	RFCAM src/controllers/todoCtrl.js Line 8:	`angular.module('todomvc')` > `angular.module()'`
+MUTANT 68:	RFCAM src/controllers/todoCtrl.js Line 17:	`$scope.$watch('todos', function () {` > `$scope.$watch(function () {'`
+MUTANT 69:	RFCAM src/controllers/todoCtrl.js Line 17:	`$scope.$watch('todos', function () {` > `$scope.$watch('todos'scope.$watch('todos', function () {'`
+MUTANT 70:	RFCAM src/controllers/todoCtrl.js Line 21:	`}, true);` > `});'`
+MUTANT 71:	RFCAM src/controllers/todoCtrl.js Line 18:	`$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;` > `$scope.remainingCount = $filter('filter')({ completed: false }).length;'`
+MUTANT 72:	RFCAM src/controllers/todoCtrl.js Line 18:	`$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;` > `$scope.remainingCount = $filter('filter')(todos).length;'`
+MUTANT 73:	RFCAM src/controllers/todoCtrl.js Line 18:	`$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;` > `$scope.remainingCount = $filter()(todos, { completed: false }).length;'`
+MUTANT 74:	RFCAM src/controllers/todoCtrl.js Line 24:	`$scope.$on('$routeChangeSuccess', function () {` > `$scope.$on(function () {'`
+MUTANT 75:	RFCAM src/controllers/todoCtrl.js Line 24:	`$scope.$on('$routeChangeSuccess', function () {` > `$scope.$on('$routeChangeSuccess'scope.$on('$routeChangeSuccess', function () {'`
+MUTANT 76:	RFCAM src/controllers/todoCtrl.js Line 46:	`.finally(function () {` > `.finally(finally(function () {'`
+MUTANT 77:	RFCAM src/controllers/todoCtrl.js Line 43:	`.then(function success() {` > `.then(then(function success() {'`
+MUTANT 78:	RFCAM src/controllers/todoCtrl.js Line 42:	`store.insert(newTodo)` > `store.insert()'`
+MUTANT 79:	RFCAM src/controllers/todoCtrl.js Line 54:	`$scope.originalTodo = angular.extend({}, todo);` > `$scope.originalTodo = angular.extend(todo);'`
+MUTANT 80:	RFCAM src/controllers/todoCtrl.js Line 54:	`$scope.originalTodo = angular.extend({}, todo);` > `$scope.originalTodo = angular.extend({});'`
+MUTANT 81:	RFCAM src/controllers/todoCtrl.js Line 84:	`.finally(function () {` > `.finally(finally(function () {'`
+MUTANT 82:	RFCAM src/controllers/todoCtrl.js Line 81:	`.then(function success() {}, function error() {` > `.then(function error() {'`
+MUTANT 83:	RFCAM src/controllers/todoCtrl.js Line 81:	`.then(function success() {}, function error() {` > `.then(function success() {}then(function success() {}, function error() {'`
+MUTANT 84:	RFCAM src/controllers/todoCtrl.js Line 80:	`store[todo.title ? 'put' : 'delete'](todo)` > `store[todo.title ? 'put' : 'delete']()'`
+MUTANT 85:	RFCAM src/controllers/todoCtrl.js Line 90:	`todos[todos.indexOf(todo)] = $scope.originalTodo;` > `todos[todos.indexOf()] = $scope.originalTodo;'`
+MUTANT 86:	RFCAM src/controllers/todoCtrl.js Line 97:	`store.delete(todo);` > `store.delete();'`
+MUTANT 87:	RFCAM src/controllers/todoCtrl.js Line 101:	`store.put(todo);` > `store.put();'`
+MUTANT 88:	RFCAM src/controllers/todoCtrl.js Line 105:	`if (angular.isDefined(completed)) {` > `if (angular.isDefined()) {'`
+MUTANT 89:	RFCAM src/controllers/todoCtrl.js Line 109:	`.then(function success() {}, function error() {` > `.then(function error() {'`
+MUTANT 90:	RFCAM src/controllers/todoCtrl.js Line 109:	`.then(function success() {}, function error() {` > `.then(function success() {}then(function success() {}, function error() {'`
+MUTANT 91:	RFCAM src/controllers/todoCtrl.js Line 108:	`store.put(todo, todos.indexOf(todo))` > `store.put(todos.indexOf(todo))'`
+MUTANT 92:	RFCAM src/controllers/todoCtrl.js Line 108:	`store.put(todo, todos.indexOf(todo))` > `store.put(todo)'`
+MUTANT 93:	RFCAM src/controllers/todoCtrl.js Line 108:	`store.put(todo, todos.indexOf(todo))` > `store.put(todo, todos.indexOf())'`
+MUTANT 94:	RFCAM src/controllers/todoCtrl.js Line 119:	`todos.forEach(function (todo) {` > `todos.forEach(odos.forEach(function (todo) {'`
+MUTANT 95:	RFCAM src/controllers/todoCtrl.js Line 121:	`$scope.toggleCompleted(todo, completed);` > `$scope.toggleCompleted(completed);'`
+MUTANT 96:	RFCAM src/controllers/todoCtrl.js Line 121:	`$scope.toggleCompleted(todo, completed);` > `$scope.toggleCompleted(todo);'`
+MUTANT 97:	RFM Lines 9-125: Commented function TodoCtrl
+MUTANT 98:	RFM Lines 17-21: Commented function (anonymous / assigned)
+MUTANT 99:	RFM Lines 24-29: Commented function (anonymous / assigned)
+MUTANT 100:	RFM Lines 31-49: Commented function (anonymous / assigned)
+MUTANT 101:	RFM Lines 43-45: Commented function success
+MUTANT 102:	RFM Lines 46-48: Commented function (anonymous / assigned)
+MUTANT 103:	RFM Lines 51-55: Commented function (anonymous / assigned)
+MUTANT 104:	RFM Lines 57-87: Commented function (anonymous / assigned)
+MUTANT 105:	RFM Lines 81-81: Commented function success
+MUTANT 106:	RFM Lines 81-83: Commented function error
+MUTANT 107:	RFM Lines 84-86: Commented function (anonymous / assigned)
+MUTANT 108:	RFM Lines 89-94: Commented function (anonymous / assigned)
+MUTANT 109:	RFM Lines 96-98: Commented function (anonymous / assigned)
+MUTANT 110:	RFM Lines 100-102: Commented function (anonymous / assigned)
+MUTANT 111:	RFM Lines 104-112: Commented function (anonymous / assigned)
+MUTANT 112:	RFM Lines 109-109: Commented function success
+MUTANT 113:	RFM Lines 109-111: Commented function error
+MUTANT 114:	RFM Lines 114-116: Commented function (anonymous / assigned)
+MUTANT 115:	RFM Lines 118-124: Commented function (anonymous / assigned)
+MUTANT 116:	RFM Lines 119-123: Commented function (anonymous / assigned)
+MUTANT 117:	RLM Commented line 12:	var todos = $scope.todos = store.todos;
+MUTANT 118:	RLM Commented line 14:	$scope.newTodo = '';
+MUTANT 119:	RLM Commented line 15:	$scope.editedTodo = null;
+MUTANT 120:	RLM Commented line 18:	$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;
+MUTANT 121:	RLM Commented line 19:	$scope.completedCount = todos.length - $scope.remainingCount;
+MUTANT 122:	RLM Commented line 20:	$scope.allChecked = !$scope.remainingCount;
+MUTANT 123:	RLM Commented line 25:	var status = $scope.status = $routeParams.status || '';
+MUTANT 124:	RLM Commented line 38:	return;
+MUTANT 125:	RLM Commented line 41:	$scope.saving = true;
+MUTANT 126:	RLM Commented line 44:	$scope.newTodo = '';
+MUTANT 127:	RLM Commented line 47:	$scope.saving = false;
+MUTANT 128:	RLM Commented line 52:	$scope.editedTodo = todo;
+MUTANT 129:	RLM Commented line 54:	$scope.originalTodo = angular.extend({}, todo);
+MUTANT 130:	RLM Commented line 61:	$scope.saveEvent = null;
+MUTANT 131:	RLM Commented line 62:	return;
+MUTANT 132:	RLM Commented line 65:	$scope.saveEvent = event;
+MUTANT 133:	RLM Commented line 69:	$scope.reverted = null;
+MUTANT 134:	RLM Commented line 70:	return;
+MUTANT 135:	RLM Commented line 73:	todo.title = todo.title.trim();
+MUTANT 136:	RLM Commented line 76:	$scope.editedTodo = null;
+MUTANT 137:	RLM Commented line 77:	return;
+MUTANT 138:	RLM Commented line 82:	todo.title = $scope.originalTodo.title;
+MUTANT 139:	RLM Commented line 85:	$scope.editedTodo = null;
+MUTANT 140:	RLM Commented line 90:	todos[todos.indexOf(todo)] = $scope.originalTodo;
+MUTANT 141:	RLM Commented line 91:	$scope.editedTodo = null;
+MUTANT 142:	RLM Commented line 92:	$scope.originalTodo = null;
+MUTANT 143:	RLM Commented line 93:	$scope.reverted = true;
+MUTANT 144:	RLM Commented line 97:	store.delete(todo);
+MUTANT 145:	RLM Commented line 101:	store.put(todo);
+MUTANT 146:	RLM Commented line 106:	todo.completed = completed;
+MUTANT 147:	RLM Commented line 110:	todo.completed = !todo.completed;
+MUTANT 148:	RLM Commented line 115:	store.clearCompleted();
+MUTANT 149:	RLM Commented line 121:	$scope.toggleCompleted(todo, completed);
+MUTANT 150:	ROPM src/controllers/todoCtrl.js Line 18:	`$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;` > `$scope.remainingCount = $filter('filter')(todos, {  }).length;'`
+MUTANT 151:	ROPM src/controllers/todoCtrl.js Line 27:	`{ completed: false } : (status === 'completed') ?` > `{  } : (status === 'completed') ?'`
+MUTANT 152:	ROPM src/controllers/todoCtrl.js Line 28:	`{ completed: true } : {};` > `{  } : {};'`
+MUTANT 153:	ROPM src/controllers/todoCtrl.js Line 33:	`title: $scope.newTodo.trim(),` > `'`
+MUTANT 154:	ROPM src/controllers/todoCtrl.js Line 34:	`completed: false` > `'`
+MUTANT 155:	SLM src/controllers/todoCtrl.js Line 8:	`angular.module('todomvc')` > `angular.module('')'`
+MUTANT 156:	SLM src/controllers/todoCtrl.js Line 8:	`angular.module('todomvc')` > `angular.module('HmhHuur')'`
+MUTANT 157:	SLM src/controllers/todoCtrl.js Line 9:	`.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {` > `.controller('', function TodoCtrl($scope, $routeParams, $filter, store) {'`
+MUTANT 158:	SLM src/controllers/todoCtrl.js Line 9:	`.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {` > `.controller('nBUgamnD', function TodoCtrl($scope, $routeParams, $filter, store) {'`
+MUTANT 159:	SLM src/controllers/todoCtrl.js Line 14:	`$scope.newTodo = '';` > `$scope.newTodo = 'Fb4KxKHGub';'`
+MUTANT 160:	SLM src/controllers/todoCtrl.js Line 17:	`$scope.$watch('todos', function () {` > `$scope.$watch('', function () {'`
+MUTANT 161:	SLM src/controllers/todoCtrl.js Line 17:	`$scope.$watch('todos', function () {` > `$scope.$watch('Tzr3b', function () {'`
+MUTANT 162:	SLM src/controllers/todoCtrl.js Line 18:	`$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;` > `$scope.remainingCount = $filter('')(todos, { completed: false }).length;'`
+MUTANT 163:	SLM src/controllers/todoCtrl.js Line 18:	`$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;` > `$scope.remainingCount = $filter('ziLXQC')(todos, { completed: false }).length;'`
+MUTANT 164:	SLM src/controllers/todoCtrl.js Line 24:	`$scope.$on('$routeChangeSuccess', function () {` > `$scope.$on('', function () {'`
+MUTANT 165:	SLM src/controllers/todoCtrl.js Line 24:	`$scope.$on('$routeChangeSuccess', function () {` > `$scope.$on('pCscSbynKEMWobU53Ab', function () {'`
+MUTANT 166:	SLM src/controllers/todoCtrl.js Line 25:	`var status = $scope.status = $routeParams.status || '';` > `var status = $scope.status = $routeParams.status || 'Ek9aggScrx';'`
+MUTANT 167:	SLM src/controllers/todoCtrl.js Line 26:	`$scope.statusFilter = (status === 'active') ?` > `$scope.statusFilter = (status === '') ?'`
+MUTANT 168:	SLM src/controllers/todoCtrl.js Line 26:	`$scope.statusFilter = (status === 'active') ?` > `$scope.statusFilter = (status === 'xQvrZy') ?'`
+MUTANT 169:	SLM src/controllers/todoCtrl.js Line 27:	`{ completed: false } : (status === 'completed') ?` > `{ completed: false } : (status === '') ?'`
+MUTANT 170:	SLM src/controllers/todoCtrl.js Line 27:	`{ completed: false } : (status === 'completed') ?` > `{ completed: false } : (status === 'ARMvCLB2G') ?'`
+MUTANT 171:	SLM src/controllers/todoCtrl.js Line 44:	`$scope.newTodo = '';` > `$scope.newTodo = 'ikaSa9U1TS';'`
+MUTANT 172:	SLM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event === '' && $scope.saveEvent === 'submit') {'`
+MUTANT 173:	SLM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event === 'Kg1L' && $scope.saveEvent === 'submit') {'`
+MUTANT 174:	SLM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event === 'blur' && $scope.saveEvent === '') {'`
+MUTANT 175:	SLM src/controllers/todoCtrl.js Line 60:	`if (event === 'blur' && $scope.saveEvent === 'submit') {` > `if (event === 'blur' && $scope.saveEvent === 'Eoxufq') {'`
+MUTANT 176:	SLM src/controllers/todoCtrl.js Line 80:	`store[todo.title ? 'put' : 'delete'](todo)` > `store[todo.title ? '' : 'delete'](todo)'`
+MUTANT 177:	SLM src/controllers/todoCtrl.js Line 80:	`store[todo.title ? 'put' : 'delete'](todo)` > `store[todo.title ? 'Pnh' : 'delete'](todo)'`
+MUTANT 178:	SLM src/controllers/todoCtrl.js Line 80:	`store[todo.title ? 'put' : 'delete'](todo)` > `store[todo.title ? 'put' : ''](todo)'`
+MUTANT 179:	SLM src/controllers/todoCtrl.js Line 80:	`store[todo.title ? 'put' : 'delete'](todo)` > `store[todo.title ? 'put' : 'o3R7Pe'](todo)'`
+MUTANT 180:	NCM src/directives/todoEscape.js Line 15:	`if (event.keyCode === ESCAPE_KEY) {` > `if (event.keyCode !== ESCAPE_KEY) {'`
+MUTANT 181:	NLM src/directives/todoEscape.js Line 11:	`var ESCAPE_KEY = 27;` > `var ESCAPE_KEY = 0;'`
+MUTANT 182:	NLM src/directives/todoEscape.js Line 11:	`var ESCAPE_KEY = 27;` > `var ESCAPE_KEY = 26;'`
+MUTANT 183:	NLM src/directives/todoEscape.js Line 11:	`var ESCAPE_KEY = 27;` > `var ESCAPE_KEY = 28;'`
+MUTANT 184:	NLM src/directives/todoEscape.js Line 11:	`var ESCAPE_KEY = 27;` > `var ESCAPE_KEY = 128762;'`
+MUTANT 185:	RCM src/directives/todoEscape.js Line 15:	`if (event.keyCode === ESCAPE_KEY) {` > `if (true) {'`
+MUTANT 186:	RCM src/directives/todoEscape.js Line 15:	`if (event.keyCode === ESCAPE_KEY) {` > `if (false) {'`
+MUTANT 187:	RFCAM src/directives/todoEscape.js Line 8:	`.directive('todoEscape', function () {` > `.directive(function () {'`
+MUTANT 188:	RFCAM src/directives/todoEscape.js Line 8:	`.directive('todoEscape', function () {` > `.directive('todoEscape'directive('todoEscape', function () {'`
+MUTANT 189:	RFCAM src/directives/todoEscape.js Line 7:	`angular.module('todomvc')` > `angular.module()'`
+MUTANT 190:	RFCAM src/directives/todoEscape.js Line 14:	`elem.bind('keydown', function (event) {` > `elem.bind(function (event) {'`
+MUTANT 191:	RFCAM src/directives/todoEscape.js Line 14:	`elem.bind('keydown', function (event) {` > `elem.bind('keydown'lem.bind('keydown', function (event) {'`
+MUTANT 192:	RFCAM src/directives/todoEscape.js Line 16:	`scope.$apply(attrs.todoEscape);` > `scope.$apply();'`
+MUTANT 193:	RFCAM src/directives/todoEscape.js Line 20:	`scope.$on('$destroy', function () {` > `scope.$on(function () {'`
+MUTANT 194:	RFCAM src/directives/todoEscape.js Line 20:	`scope.$on('$destroy', function () {` > `scope.$on('$destroy'cope.$on('$destroy', function () {'`
+MUTANT 195:	RFCAM src/directives/todoEscape.js Line 21:	`elem.unbind('keydown');` > `elem.unbind();'`
+MUTANT 196:	RFM Lines 8-24: Commented function (anonymous / assigned)
+MUTANT 197:	RFM Lines 13-23: Commented function (anonymous / assigned)
+MUTANT 198:	RFM Lines 14-18: Commented function (anonymous / assigned)
+MUTANT 199:	RFM Lines 20-22: Commented function (anonymous / assigned)
+MUTANT 200:	RLM Commented line 11:	var ESCAPE_KEY = 27;
+MUTANT 201:	RLM Commented line 16:	scope.$apply(attrs.todoEscape);
+MUTANT 202:	RLM Commented line 21:	elem.unbind('keydown');
+MUTANT 203:	SLM src/directives/todoEscape.js Line 7:	`angular.module('todomvc')` > `angular.module('')'`
+MUTANT 204:	SLM src/directives/todoEscape.js Line 7:	`angular.module('todomvc')` > `angular.module('8kWKpt5')'`
+MUTANT 205:	SLM src/directives/todoEscape.js Line 8:	`.directive('todoEscape', function () {` > `.directive('', function () {'`
+MUTANT 206:	SLM src/directives/todoEscape.js Line 8:	`.directive('todoEscape', function () {` > `.directive('d6iA9VcOgP', function () {'`
+MUTANT 207:	SLM src/directives/todoEscape.js Line 14:	`elem.bind('keydown', function (event) {` > `elem.bind('', function (event) {'`
+MUTANT 208:	SLM src/directives/todoEscape.js Line 14:	`elem.bind('keydown', function (event) {` > `elem.bind('TTTL3D3', function (event) {'`
+MUTANT 209:	SLM src/directives/todoEscape.js Line 20:	`scope.$on('$destroy', function () {` > `scope.$on('', function () {'`
+MUTANT 210:	SLM src/directives/todoEscape.js Line 20:	`scope.$on('$destroy', function () {` > `scope.$on('rmrpZ775', function () {'`
+MUTANT 211:	SLM src/directives/todoEscape.js Line 21:	`elem.unbind('keydown');` > `elem.unbind('');'`
+MUTANT 212:	SLM src/directives/todoEscape.js Line 21:	`elem.unbind('keydown');` > `elem.unbind('VA5wTtT');'`
+MUTANT 213:	BLM src/directives/todoFocus.js Line 16:	`}, 0, false);` > `}, 0, true);'`
+MUTANT 214:	NLM src/directives/todoFocus.js Line 15:	`elem[0].focus();` > `elem[-1].focus();'`
+MUTANT 215:	NLM src/directives/todoFocus.js Line 15:	`elem[0].focus();` > `elem[1].focus();'`
+MUTANT 216:	NLM src/directives/todoFocus.js Line 15:	`elem[0].focus();` > `elem[362145].focus();'`
+MUTANT 217:	NLM src/directives/todoFocus.js Line 16:	`}, 0, false);` > `}, -1, false);'`
+MUTANT 218:	NLM src/directives/todoFocus.js Line 16:	`}, 0, false);` > `}, 1, false);'`
+MUTANT 219:	NLM src/directives/todoFocus.js Line 16:	`}, 0, false);` > `}, 659322, false);'`
+MUTANT 220:	RFCAM src/directives/todoFocus.js Line 8:	`.directive('todoFocus', function todoFocus($timeout) {` > `.directive(function todoFocus($timeout) {'`
+MUTANT 221:	RFCAM src/directives/todoFocus.js Line 8:	`.directive('todoFocus', function todoFocus($timeout) {` > `.directive('todoFocus'directive('todoFocus', function todoFocus($timeout) {'`
+MUTANT 222:	RFCAM src/directives/todoFocus.js Line 7:	`angular.module('todomvc')` > `angular.module()'`
+MUTANT 223:	RFCAM src/directives/todoFocus.js Line 12:	`scope.$watch(attrs.todoFocus, function (newVal) {` > `scope.$watch(function (newVal) {'`
+MUTANT 224:	RFCAM src/directives/todoFocus.js Line 12:	`scope.$watch(attrs.todoFocus, function (newVal) {` > `scope.$watch(attrs.todoFocuscope.$watch(attrs.todoFocus, function (newVal) {'`
+MUTANT 225:	RFCAM src/directives/todoFocus.js Line 14:	`$timeout(function () {` > `$timeout(timeout(function () {'`
+MUTANT 226:	RFCAM src/directives/todoFocus.js Line 16:	`}, 0, false);` > `}, false);'`
+MUTANT 227:	RFCAM src/directives/todoFocus.js Line 16:	`}, 0, false);` > `}, 0);'`
+MUTANT 228:	RFM Lines 8-20: Commented function todoFocus
+MUTANT 229:	RFM Lines 11-19: Commented function (anonymous / assigned)
+MUTANT 230:	RFM Lines 12-18: Commented function (anonymous / assigned)
+MUTANT 231:	RFM Lines 14-16: Commented function (anonymous / assigned)
+MUTANT 232:	RLM Commented line 15:	elem[0].focus();
+MUTANT 233:	SLM src/directives/todoFocus.js Line 7:	`angular.module('todomvc')` > `angular.module('')'`
+MUTANT 234:	SLM src/directives/todoFocus.js Line 7:	`angular.module('todomvc')` > `angular.module('ODx0NPT')'`
+MUTANT 235:	SLM src/directives/todoFocus.js Line 8:	`.directive('todoFocus', function todoFocus($timeout) {` > `.directive('', function todoFocus($timeout) {'`
+MUTANT 236:	SLM src/directives/todoFocus.js Line 8:	`.directive('todoFocus', function todoFocus($timeout) {` > `.directive('l0KMvvXrA', function todoFocus($timeout) {'`
+MUTANT 237:	NLM src/services/todoStorage.js Line 37:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(-1);'`
+MUTANT 238:	NLM src/services/todoStorage.js Line 37:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(1);'`
+MUTANT 239:	NLM src/services/todoStorage.js Line 37:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(459470);'`
+MUTANT 240:	NLM src/services/todoStorage.js Line 52:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(-1);'`
+MUTANT 241:	NLM src/services/todoStorage.js Line 52:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(1);'`
+MUTANT 242:	NLM src/services/todoStorage.js Line 52:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(888445);'`
+MUTANT 243:	NLM src/services/todoStorage.js Line 54:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo), 0);'`
+MUTANT 244:	NLM src/services/todoStorage.js Line 54:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo), 2);'`
+MUTANT 245:	NLM src/services/todoStorage.js Line 54:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo), 129153);'`
+MUTANT 246:	NLM src/services/todoStorage.js Line 69:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(-1);'`
+MUTANT 247:	NLM src/services/todoStorage.js Line 69:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(1);'`
+MUTANT 248:	NLM src/services/todoStorage.js Line 69:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice(89885);'`
+MUTANT 249:	NLM src/services/todoStorage.js Line 124:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo), 0);'`
+MUTANT 250:	NLM src/services/todoStorage.js Line 124:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo), 2);'`
+MUTANT 251:	NLM src/services/todoStorage.js Line 124:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo), 658912);'`
+MUTANT 252:	RFCAM src/services/todoStorage.js Line 90:	`.factory('localStorage', function ($q) {` > `.factory(function ($q) {'`
+MUTANT 253:	RFCAM src/services/todoStorage.js Line 90:	`.factory('localStorage', function ($q) {` > `.factory('localStorage'factory('localStorage', function ($q) {'`
+MUTANT 254:	RFCAM src/services/todoStorage.js Line 24:	`.factory('api', function ($resource) {` > `.factory(function ($resource) {'`
+MUTANT 255:	RFCAM src/services/todoStorage.js Line 24:	`.factory('api', function ($resource) {` > `.factory('api'factory('api', function ($resource) {'`
+MUTANT 256:	RFCAM src/services/todoStorage.js Line 11:	`.factory('todoStorage', function ($http, $injector) {` > `.factory(function ($http, $injector) {'`
+MUTANT 257:	RFCAM src/services/todoStorage.js Line 11:	`.factory('todoStorage', function ($http, $injector) {` > `.factory('todoStorage'factory('todoStorage', function ($http, $injector) {'`
+MUTANT 258:	RFCAM src/services/todoStorage.js Line 10:	`angular.module('todomvc')` > `angular.module()'`
+MUTANT 259:	RFCAM src/services/todoStorage.js Line 17:	`.then(function () {` > `.then(then(function () {'`
+MUTANT 260:	RFCAM src/services/todoStorage.js Line 19:	`}, function () {` > `}, function () {'`
+MUTANT 261:	RFCAM src/services/todoStorage.js Line 16:	`return $http.get('/api')` > `return $http.get()'`
+MUTANT 262:	RFCAM src/services/todoStorage.js Line 18:	`return $injector.get('api');` > `return $injector.get();'`
+MUTANT 263:	RFCAM src/services/todoStorage.js Line 20:	`return $injector.get('localStorage');` > `return $injector.get();'`
+MUTANT 264:	RFCAM src/services/todoStorage.js Line 30:	`api: $resource('/api/todos/:id', null,` > `api: $resource(null,'`
+MUTANT 265:	RFCAM src/services/todoStorage.js Line 30:	`api: $resource('/api/todos/:id', null,` > `api: $resource('/api/todos/:id','`
+MUTANT 266:	RFCAM src/services/todoStorage.js Line 31:	`{` > `'`
+MUTANT 267:	RFCAM src/services/todoStorage.js Line 37:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice();'`
+MUTANT 268:	RFCAM src/services/todoStorage.js Line 39:	`var incompleteTodos = store.todos.filter(function (todo) {` > `var incompleteTodos = store.todos.filter(ar incompleteTodos = store.todos.filter(function (todo) {'`
+MUTANT 269:	RFCAM src/services/todoStorage.js Line 43:	`angular.copy(incompleteTodos, store.todos);` > `angular.copy(store.todos);'`
+MUTANT 270:	RFCAM src/services/todoStorage.js Line 43:	`angular.copy(incompleteTodos, store.todos);` > `angular.copy(incompleteTodos);'`
+MUTANT 271:	RFCAM src/services/todoStorage.js Line 45:	`return store.api.delete(function () {` > `return store.api.delete(turn store.api.delete(function () {'`
+MUTANT 272:	RFCAM src/services/todoStorage.js Line 46:	`}, function error() {` > `}, function error() {'`
+MUTANT 273:	RFCAM src/services/todoStorage.js Line 47:	`angular.copy(originalTodos, store.todos);` > `angular.copy(store.todos);'`
+MUTANT 274:	RFCAM src/services/todoStorage.js Line 47:	`angular.copy(originalTodos, store.todos);` > `angular.copy(originalTodos);'`
+MUTANT 275:	RFCAM src/services/todoStorage.js Line 52:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice();'`
+MUTANT 276:	RFCAM src/services/todoStorage.js Line 54:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(1);'`
+MUTANT 277:	RFCAM src/services/todoStorage.js Line 54:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo));'`
+MUTANT 278:	RFCAM src/services/todoStorage.js Line 54:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(), 1);'`
+MUTANT 279:	RFCAM src/services/todoStorage.js Line 55:	`return store.api.delete({ id: todo.id },` > `return store.api.delete('`
+MUTANT 280:	RFCAM src/services/todoStorage.js Line 56:	`function () {` > `unction () {'`
+MUTANT 281:	RFCAM src/services/todoStorage.js Line 57:	`}, function error() {` > `}, function error() {'`
+MUTANT 282:	RFCAM src/services/todoStorage.js Line 58:	`angular.copy(originalTodos, store.todos);` > `angular.copy(store.todos);'`
+MUTANT 283:	RFCAM src/services/todoStorage.js Line 58:	`angular.copy(originalTodos, store.todos);` > `angular.copy(originalTodos);'`
+MUTANT 284:	RFCAM src/services/todoStorage.js Line 63:	`return store.api.query(function (resp) {` > `return store.api.query(eturn store.api.query(function (resp) {'`
+MUTANT 285:	RFCAM src/services/todoStorage.js Line 64:	`angular.copy(resp, store.todos);` > `angular.copy(store.todos);'`
+MUTANT 286:	RFCAM src/services/todoStorage.js Line 64:	`angular.copy(resp, store.todos);` > `angular.copy(resp);'`
+MUTANT 287:	RFCAM src/services/todoStorage.js Line 69:	`var originalTodos = store.todos.slice(0);` > `var originalTodos = store.todos.slice();'`
+MUTANT 288:	RFCAM src/services/todoStorage.js Line 71:	`return store.api.save(todo,` > `return store.api.save('`
+MUTANT 289:	RFCAM src/services/todoStorage.js Line 72:	`function success(resp) {` > `unction success(resp) {'`
+MUTANT 290:	RFCAM src/services/todoStorage.js Line 75:	`}, function error() {` > `}, function error() {'`
+MUTANT 291:	RFCAM src/services/todoStorage.js Line 74:	`store.todos.push(todo);` > `store.todos.push();'`
+MUTANT 292:	RFCAM src/services/todoStorage.js Line 76:	`angular.copy(originalTodos, store.todos);` > `angular.copy(store.todos);'`
+MUTANT 293:	RFCAM src/services/todoStorage.js Line 76:	`angular.copy(originalTodos, store.todos);` > `angular.copy(originalTodos);'`
+MUTANT 294:	RFCAM src/services/todoStorage.js Line 82:	`return store.api.update({ id: todo.id }, todo)` > `return store.api.update(todo)'`
+MUTANT 295:	RFCAM src/services/todoStorage.js Line 82:	`return store.api.update({ id: todo.id }, todo)` > `return store.api.update({ id: todo.id })'`
+MUTANT 296:	RFCAM src/services/todoStorage.js Line 99:	`return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');` > `return JSON.parse();'`
+MUTANT 297:	RFCAM src/services/todoStorage.js Line 99:	`return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');` > `return JSON.parse(localStorage.getItem() || '[]');'`
+MUTANT 298:	RFCAM src/services/todoStorage.js Line 103:	`localStorage.setItem(STORAGE_ID, JSON.stringify(todos));` > `localStorage.setItem(JSON.stringify(todos));'`
+MUTANT 299:	RFCAM src/services/todoStorage.js Line 103:	`localStorage.setItem(STORAGE_ID, JSON.stringify(todos));` > `localStorage.setItem(STORAGE_ID);'`
+MUTANT 300:	RFCAM src/services/todoStorage.js Line 103:	`localStorage.setItem(STORAGE_ID, JSON.stringify(todos));` > `localStorage.setItem(STORAGE_ID, JSON.stringify());'`
+MUTANT 301:	RFCAM src/services/todoStorage.js Line 109:	`var incompleteTodos = store.todos.filter(function (todo) {` > `var incompleteTodos = store.todos.filter(ar incompleteTodos = store.todos.filter(function (todo) {'`
+MUTANT 302:	RFCAM src/services/todoStorage.js Line 113:	`angular.copy(incompleteTodos, store.todos);` > `angular.copy(store.todos);'`
+MUTANT 303:	RFCAM src/services/todoStorage.js Line 113:	`angular.copy(incompleteTodos, store.todos);` > `angular.copy(incompleteTodos);'`
+MUTANT 304:	RFCAM src/services/todoStorage.js Line 115:	`store._saveToLocalStorage(store.todos);` > `store._saveToLocalStorage();'`
+MUTANT 305:	RFCAM src/services/todoStorage.js Line 116:	`deferred.resolve(store.todos);` > `deferred.resolve();'`
+MUTANT 306:	RFCAM src/services/todoStorage.js Line 124:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(1);'`
+MUTANT 307:	RFCAM src/services/todoStorage.js Line 124:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(todo));'`
+MUTANT 308:	RFCAM src/services/todoStorage.js Line 124:	`store.todos.splice(store.todos.indexOf(todo), 1);` > `store.todos.splice(store.todos.indexOf(), 1);'`
+MUTANT 309:	RFCAM src/services/todoStorage.js Line 126:	`store._saveToLocalStorage(store.todos);` > `store._saveToLocalStorage();'`
+MUTANT 310:	RFCAM src/services/todoStorage.js Line 127:	`deferred.resolve(store.todos);` > `deferred.resolve();'`
+MUTANT 311:	RFCAM src/services/todoStorage.js Line 135:	`angular.copy(store._getFromLocalStorage(), store.todos);` > `angular.copy(store.todos);'`
+MUTANT 312:	RFCAM src/services/todoStorage.js Line 135:	`angular.copy(store._getFromLocalStorage(), store.todos);` > `angular.copy(store._getFromLocalStorage());'`
+MUTANT 313:	RFCAM src/services/todoStorage.js Line 136:	`deferred.resolve(store.todos);` > `deferred.resolve();'`
+MUTANT 314:	RFCAM src/services/todoStorage.js Line 144:	`store.todos.push(todo);` > `store.todos.push();'`
+MUTANT 315:	RFCAM src/services/todoStorage.js Line 146:	`store._saveToLocalStorage(store.todos);` > `store._saveToLocalStorage();'`
+MUTANT 316:	RFCAM src/services/todoStorage.js Line 147:	`deferred.resolve(store.todos);` > `deferred.resolve();'`
+MUTANT 317:	RFCAM src/services/todoStorage.js Line 157:	`store._saveToLocalStorage(store.todos);` > `store._saveToLocalStorage();'`
+MUTANT 318:	RFCAM src/services/todoStorage.js Line 158:	`deferred.resolve(store.todos);` > `deferred.resolve();'`
+MUTANT 319:	RFM Lines 11-22: Commented function (anonymous / assigned)
+MUTANT 320:	RFM Lines 17-19: Commented function (anonymous / assigned)
+MUTANT 321:	RFM Lines 19-21: Commented function (anonymous / assigned)
+MUTANT 322:	RFM Lines 24-88: Commented function (anonymous / assigned)
+MUTANT 323:	RFM Lines 36-49: Commented function (anonymous / assigned)
+MUTANT 324:	RFM Lines 39-41: Commented function (anonymous / assigned)
+MUTANT 325:	RFM Lines 45-46: Commented function (anonymous / assigned)
+MUTANT 326:	RFM Lines 46-48: Commented function error
+MUTANT 327:	RFM Lines 51-60: Commented function (anonymous / assigned)
+MUTANT 328:	RFM Lines 56-57: Commented function (anonymous / assigned)
+MUTANT 329:	RFM Lines 57-59: Commented function error
+MUTANT 330:	RFM Lines 62-66: Commented function (anonymous / assigned)
+MUTANT 331:	RFM Lines 63-65: Commented function (anonymous / assigned)
+MUTANT 332:	RFM Lines 68-79: Commented function (anonymous / assigned)
+MUTANT 333:	RFM Lines 72-75: Commented function success
+MUTANT 334:	RFM Lines 75-77: Commented function error
+MUTANT 335:	RFM Lines 81-84: Commented function (anonymous / assigned)
+MUTANT 336:	RFM Lines 90-165: Commented function (anonymous / assigned)
+MUTANT 337:	RFM Lines 98-100: Commented function (anonymous / assigned)
+MUTANT 338:	RFM Lines 102-104: Commented function (anonymous / assigned)
+MUTANT 339:	RFM Lines 106-119: Commented function (anonymous / assigned)
+MUTANT 340:	RFM Lines 109-111: Commented function (anonymous / assigned)
+MUTANT 341:	RFM Lines 121-130: Commented function (anonymous / assigned)
+MUTANT 342:	RFM Lines 132-139: Commented function (anonymous / assigned)
+MUTANT 343:	RFM Lines 141-150: Commented function (anonymous / assigned)
+MUTANT 344:	RFM Lines 152-161: Commented function (anonymous / assigned)
+MUTANT 345:	RLM Commented line 18:	return $injector.get('api');
+MUTANT 346:	RLM Commented line 20:	return $injector.get('localStorage');
+MUTANT 347:	RLM Commented line 37:	var originalTodos = store.todos.slice(0);
+MUTANT 348:	RLM Commented line 40:	return !todo.completed;
+MUTANT 349:	RLM Commented line 43:	angular.copy(incompleteTodos, store.todos);
+MUTANT 350:	RLM Commented line 47:	angular.copy(originalTodos, store.todos);
+MUTANT 351:	RLM Commented line 52:	var originalTodos = store.todos.slice(0);
+MUTANT 352:	RLM Commented line 54:	store.todos.splice(store.todos.indexOf(todo), 1);
+MUTANT 353:	RLM Commented line 58:	angular.copy(originalTodos, store.todos);
+MUTANT 354:	RLM Commented line 64:	angular.copy(resp, store.todos);
+MUTANT 355:	RLM Commented line 69:	var originalTodos = store.todos.slice(0);
+MUTANT 356:	RLM Commented line 73:	todo.id = resp.id;
+MUTANT 357:	RLM Commented line 74:	store.todos.push(todo);
+MUTANT 358:	RLM Commented line 76:	angular.copy(originalTodos, store.todos);
+MUTANT 359:	RLM Commented line 87:	return store;
+MUTANT 360:	RLM Commented line 93:	var STORAGE_ID = 'todos-angularjs';
+MUTANT 361:	RLM Commented line 99:	return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
+MUTANT 362:	RLM Commented line 103:	localStorage.setItem(STORAGE_ID, JSON.stringify(todos));
+MUTANT 363:	RLM Commented line 107:	var deferred = $q.defer();
+MUTANT 364:	RLM Commented line 110:	return !todo.completed;
+MUTANT 365:	RLM Commented line 113:	angular.copy(incompleteTodos, store.todos);
+MUTANT 366:	RLM Commented line 115:	store._saveToLocalStorage(store.todos);
+MUTANT 367:	RLM Commented line 116:	deferred.resolve(store.todos);
+MUTANT 368:	RLM Commented line 118:	return deferred.promise;
+MUTANT 369:	RLM Commented line 122:	var deferred = $q.defer();
+MUTANT 370:	RLM Commented line 124:	store.todos.splice(store.todos.indexOf(todo), 1);
+MUTANT 371:	RLM Commented line 126:	store._saveToLocalStorage(store.todos);
+MUTANT 372:	RLM Commented line 127:	deferred.resolve(store.todos);
+MUTANT 373:	RLM Commented line 129:	return deferred.promise;
+MUTANT 374:	RLM Commented line 133:	var deferred = $q.defer();
+MUTANT 375:	RLM Commented line 135:	angular.copy(store._getFromLocalStorage(), store.todos);
+MUTANT 376:	RLM Commented line 136:	deferred.resolve(store.todos);
+MUTANT 377:	RLM Commented line 138:	return deferred.promise;
+MUTANT 378:	RLM Commented line 142:	var deferred = $q.defer();
+MUTANT 379:	RLM Commented line 144:	store.todos.push(todo);
+MUTANT 380:	RLM Commented line 146:	store._saveToLocalStorage(store.todos);
+MUTANT 381:	RLM Commented line 147:	deferred.resolve(store.todos);
+MUTANT 382:	RLM Commented line 149:	return deferred.promise;
+MUTANT 383:	RLM Commented line 153:	var deferred = $q.defer();
+MUTANT 384:	RLM Commented line 155:	store.todos[index] = todo;
+MUTANT 385:	RLM Commented line 157:	store._saveToLocalStorage(store.todos);
+MUTANT 386:	RLM Commented line 158:	deferred.resolve(store.todos);
+MUTANT 387:	RLM Commented line 160:	return deferred.promise;
+MUTANT 388:	RLM Commented line 164:	return store;
+MUTANT 389:	ROPM src/services/todoStorage.js Line 28:	`todos: [],` > `'`
+MUTANT 390:	ROPM Lines 30-34: Commented property api
+MUTANT 391:	ROPM src/services/todoStorage.js Line 32:	`update: { method:'PUT' }` > `'`
+MUTANT 392:	ROPM src/services/todoStorage.js Line 32:	`update: { method:'PUT' }` > `update: {  }'`
+MUTANT 393:	ROPM Lines 36-49: Commented property clearCompleted
+MUTANT 394:	ROPM Lines 51-60: Commented property delete
+MUTANT 395:	ROPM src/services/todoStorage.js Line 55:	`return store.api.delete({ id: todo.id },` > `return store.api.delete({  },'`
+MUTANT 396:	ROPM Lines 62-66: Commented property get
+MUTANT 397:	ROPM Lines 68-79: Commented property insert
+MUTANT 398:	ROPM Lines 81-84: Commented property put
+MUTANT 399:	ROPM src/services/todoStorage.js Line 82:	`return store.api.update({ id: todo.id }, todo)` > `return store.api.update({  }, todo)'`
+MUTANT 400:	ROPM src/services/todoStorage.js Line 96:	`todos: [],` > `'`
+MUTANT 401:	ROPM Lines 98-100: Commented property _getFromLocalStorage
+MUTANT 402:	ROPM Lines 102-104: Commented property _saveToLocalStorage
+MUTANT 403:	ROPM Lines 106-119: Commented property clearCompleted
+MUTANT 404:	ROPM Lines 121-130: Commented property delete
+MUTANT 405:	ROPM Lines 132-139: Commented property get
+MUTANT 406:	ROPM Lines 141-150: Commented property insert
+MUTANT 407:	ROPM Lines 152-161: Commented property put
+MUTANT 408:	SLM src/services/todoStorage.js Line 10:	`angular.module('todomvc')` > `angular.module('')'`
+MUTANT 409:	SLM src/services/todoStorage.js Line 10:	`angular.module('todomvc')` > `angular.module('3B4O6ps')'`
+MUTANT 410:	SLM src/services/todoStorage.js Line 11:	`.factory('todoStorage', function ($http, $injector) {` > `.factory('', function ($http, $injector) {'`
+MUTANT 411:	SLM src/services/todoStorage.js Line 11:	`.factory('todoStorage', function ($http, $injector) {` > `.factory('KHTQTlrnSAW', function ($http, $injector) {'`
+MUTANT 412:	SLM src/services/todoStorage.js Line 16:	`return $http.get('/api')` > `return $http.get('')'`
+MUTANT 413:	SLM src/services/todoStorage.js Line 16:	`return $http.get('/api')` > `return $http.get('kaiE')'`
+MUTANT 414:	SLM src/services/todoStorage.js Line 18:	`return $injector.get('api');` > `return $injector.get('');'`
+MUTANT 415:	SLM src/services/todoStorage.js Line 18:	`return $injector.get('api');` > `return $injector.get('XnF');'`
+MUTANT 416:	SLM src/services/todoStorage.js Line 20:	`return $injector.get('localStorage');` > `return $injector.get('');'`
+MUTANT 417:	SLM src/services/todoStorage.js Line 20:	`return $injector.get('localStorage');` > `return $injector.get('tfuNyNkAu7i3');'`
+MUTANT 418:	SLM src/services/todoStorage.js Line 24:	`.factory('api', function ($resource) {` > `.factory('', function ($resource) {'`
+MUTANT 419:	SLM src/services/todoStorage.js Line 24:	`.factory('api', function ($resource) {` > `.factory('gHh', function ($resource) {'`
+MUTANT 420:	SLM src/services/todoStorage.js Line 30:	`api: $resource('/api/todos/:id', null,` > `api: $resource('', null,'`
+MUTANT 421:	SLM src/services/todoStorage.js Line 30:	`api: $resource('/api/todos/:id', null,` > `api: $resource('5vSfgTLS3FXLNs', null,'`
+MUTANT 422:	SLM src/services/todoStorage.js Line 32:	`update: { method:'PUT' }` > `update: { method:'' }'`
+MUTANT 423:	SLM src/services/todoStorage.js Line 32:	`update: { method:'PUT' }` > `update: { method:'K21' }'`
+MUTANT 424:	SLM src/services/todoStorage.js Line 90:	`.factory('localStorage', function ($q) {` > `.factory('', function ($q) {'`
+MUTANT 425:	SLM src/services/todoStorage.js Line 90:	`.factory('localStorage', function ($q) {` > `.factory('urTyvkN0AigZ', function ($q) {'`
+MUTANT 426:	SLM src/services/todoStorage.js Line 93:	`var STORAGE_ID = 'todos-angularjs';` > `var STORAGE_ID = '';'`
+MUTANT 427:	SLM src/services/todoStorage.js Line 93:	`var STORAGE_ID = 'todos-angularjs';` > `var STORAGE_ID = 'vwXfU0FiipTI7tO';'`
+MUTANT 428:	SLM src/services/todoStorage.js Line 99:	`return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');` > `return JSON.parse(localStorage.getItem(STORAGE_ID) || '');'`
+MUTANT 429:	SLM src/services/todoStorage.js Line 99:	`return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');` > `return JSON.parse(localStorage.getItem(STORAGE_ID) || 'Nv');'`

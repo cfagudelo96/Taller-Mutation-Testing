@@ -1,0 +1,449 @@
+Mutode 153892640 running
+Creating a copy of your module... Done
+Loading mutators... Done
+Verifying and timing your test suite
+Took 3.87 seconds to run full test suite
+Running mutants for src/app.js
+MUTANT 1:	RAEM Line 8:	angular.module('todomvc', ['ngRoute', 'ngResource'])	killed 3012 ms
+MUTANT 2:	RAEM Line 8:	angular.module('todomvc', ['ngRoute', 'ngResource'])	survived 3101 ms
+MUTANT 3:	RFCAM Line 9:	.config(config(function ($routeProvider) {	killed 2980 ms
+MUTANT 4:	RFCAM Line 8:	angular.module('todomvc', ['(['ngRoute', 'ngResource'])	killed 3102 ms
+MUTANT 5:	RFCAM Line 8:	angular.module('todomvc', ['ngRoute', 'ngResource'])')	killed 3353 ms
+MUTANT 6:	RFCAM Line 18:	return todoStorage.then(eturn todoStorage.then(function (module) {	killed 3003 ms
+MUTANT 7:	RFCAM Line 29:	.otherwise(otherwise({	killed 3138 ms
+MUTANT 8:	RFCAM Line 28:	.when('/:status', (routeConfig)	killed 4158 ms
+MUTANT 9:	RFCAM Line 28:	.when('/:status', routeConfig)')	killed 6414 ms
+MUTANT 10:	RFCAM Line 27:	.when('/', (routeConfig)	killed 5031 ms
+MUTANT 11:	RFCAM Line 27:	.when('/', routeConfig)('/')	killed 4060 ms
+MUTANT 12:	RFM Lines 9-32: Commented function (anonymous / assigned)	survived 5817 ms
+MUTANT 13:	RFM Lines 16-22: Commented function (anonymous / assigned)	survived 8466 ms
+MUTANT 14:	RFM Lines 18-21: Commented function (anonymous / assigned)	survived 4966 ms
+MUTANT 15:	RLM Commented line 19:	module.get(); // Fetch the todo records in the background.	survived 3859 ms
+MUTANT 16:	RLM Commented line 20:	return module;	survived 4219 ms
+MUTANT 17:	ROPM Line 13:	controller: 'TodoCtrl',	survived 4216 ms
+MUTANT 18:	ROPM Line 14:	templateUrl: 'todomvc-index.html',	survived 4717 ms
+MUTANT 19:	ROPM Lines 15-23: Commented property resolve	survived 3493 ms
+MUTANT 20:	ROPM Lines 16-22: Commented property store	survived 4108 ms
+MUTANT 21:	ROPM Line 30:	redirectTo: '/'	survived 3533 ms
+MUTANT 22:	SLM Line 8:	angular.module('todomvc',('', ['ngRoute', 'ngResource'])...	killed 3931 ms
+MUTANT 23:	SLM Line 8:	angular.module('todomvcJpQ3hQA', ['ngRoute', 'ngResource'])...	killed 4015 ms
+MUTANT 24:	SLM Line 8:	angular.module('todomvc', ['ngRoute',['', 'ngResource'])...	killed 3087 ms
+MUTANT 25:	SLM Line 8:	angular.module('todomvc', ['ngRouteZUwR2Tf', 'ngResource'])...	killed 4091 ms
+MUTANT 26:	SLM Line 8:	angular.module('todomvc', ['ngRoute', 'ngResource'])''])...	killed 3953 ms
+MUTANT 27:	SLM Line 8:	angular.module('todomvc', ['ngRoute', 'ngResourceM1LiG99BE7'])...	killed 3700 ms
+MUTANT 28:	SLM Line 13:	controller: 'TodoCtrl','',...	survived 4695 ms
+MUTANT 29:	SLM Line 13:	controller: 'TodoCtrlUAZO33Nh',...	survived 3614 ms
+MUTANT 30:	SLM Line 14:	templateUrl: 'todomvc-index.html','',...	survived 3951 ms
+MUTANT 31:	SLM Line 14:	templateUrl: 'todomvc-index.htmlDOLIfJW8a5oZ1stM7y',...	survived 4281 ms
+MUTANT 32:	SLM Line 27:	.when('/',('', routeConfig)...	survived 3633 ms
+MUTANT 33:	SLM Line 27:	.when('/',('J', routeConfig)...	survived 4464 ms
+MUTANT 34:	SLM Line 28:	.when('/:status',('', routeConfig)...	survived 3791 ms
+MUTANT 35:	SLM Line 28:	.when('/:status('iHxoc1pG', routeConfig)...	survived 4569 ms
+MUTANT 36:	SLM Line 30:	redirectTo: '/'''...	survived 3304 ms
+MUTANT 37:	SLM Line 30:	redirectTo: '/''E'...	survived 3635 ms
+
+Running mutants for src/controllers/todoCtrl.js
+MUTANT 38:	BLM Line 18:	$scope.remainingCount = $filter('filter')(todos, { completed: falsetrue }).length;...	killed 4216 ms
+MUTANT 39:	BLM Line 21:	}, truefalse);...	killed 4053 ms
+MUTANT 40:	BLM Line 27:	{ completed: falsetrue } : (status === 'completed') ?...	killed 4028 ms
+MUTANT 41:	BLM Line 28:	{ completed: truefalse } : {};...	killed 3950 ms
+MUTANT 42:	BLM Line 34:	completed: falsetrue...	survived 3112 ms
+MUTANT 43:	BLM Line 41:	$scope.saving = truefalse;...	survived 3792 ms
+MUTANT 44:	BLM Line 47:	$scope.saving = falsetrue;...	survived 5058 ms
+MUTANT 45:	BLM Line 93:	$scope.reverted = truefalse;...	survived 3622 ms
+MUTANT 46:	MM Line 19:	$scope.completedCount = todos.length -+ $scope.remainingCount;	killed 4399 ms
+MUTANT 47:	NCM Line 26:	$scope.statusFilter = (status ===!== 'active') ?	killed 3583 ms
+MUTANT 48:	NCM Line 27:	{ completed: false } : (status ===!== 'completed') ?	killed 3094 ms
+MUTANT 49:	NCM Line 60:	if (event ===!== 'blur' && $scope.saveEvent === 'submit') {	survived 3305 ms
+MUTANT 50:	NCM Line 60:	if (event === 'blur' && $scope.saveEvent ===!== 'submit') {	survived 2651 ms
+MUTANT 51:	NCM Line 75:	if (todo.title ===!== $scope.originalTodo.title) {	killed 2582 ms
+MUTANT 52:	NCM Line 120:	if (todo.completed !===== completed) {	killed 2532 ms
+MUTANT 53:	RCM Line 26:	$scope.statusFilter = (statustrue) === 'active') ?	killed 2657 ms
+MUTANT 54:	RCM Line 26:	$scope.statusFilter = (statusfalse) === 'active') ?	survived 2628 ms
+MUTANT 55:	RCM Line 27:	{ completed: false } : (statustrue) === 'completed') ?	killed 2582 ms
+MUTANT 56:	RCM Line 27:	{ completed: false } : (statusfalse) === 'completed') ?	killed 3052 ms
+MUTANT 57:	RCM Line 60:	if (eventtrue === 'blur' && $scope.saveEvent === 'submit') {	survived 2776 ms
+MUTANT 58:	RCM Line 60:	if (eventfalse === 'blur' && $scope.saveEvent === 'submit') {	survived 2782 ms
+MUTANT 59:	RCM Line 60:	if (event === 'blur' && $scope.saveEventtrue) === 'submit') {	survived 2593 ms
+MUTANT 60:	RCM Line 60:	if (event === 'blur' && $scope.saveEventfalse) === 'submit') {	survived 2583 ms
+MUTANT 61:	RCM Line 75:	if (todo.title === $scope.originalTodo.titletrue) {	killed 2610 ms
+MUTANT 62:	RCM Line 75:	if (todo.title === $scope.originalTodo.titlefalse) {	survived 2649 ms
+MUTANT 63:	RCM Line 120:	if (todo.completed !== completedtrue) {	survived 2633 ms
+MUTANT 64:	RCM Line 120:	if (todo.completed !== completedfalse) {	killed 3031 ms
+MUTANT 65:	RFCAM Line 9:	.controller('TodoCtrl', (function TodoCtrl($scope, $routeParams, $filter, store) {	killed 2741 ms
+MUTANT 66:	RFCAM Line 9:	.controller('TodoCtrl'controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {	killed 2465 ms
+MUTANT 67:	RFCAM Line 8:	angular.module('todomvc')()	killed 2861 ms
+MUTANT 68:	RFCAM Line 17:	$scope.$watch('todos', (function () {	survived 2633 ms
+MUTANT 69:	RFCAM Line 17:	$scope.$watch('todos'scope.$watch('todos', function () {	killed 2471 ms
+MUTANT 70:	RFCAM Line 21:	}, true);});	killed 2610 ms
+MUTANT 71:	RFCAM Line 18:	$scope.remainingCount = $filter('filter')(todos,')({ { completed: false }).length;	killed 2856 ms
+MUTANT 72:	RFCAM Line 18:	$scope.remainingCount = $filter('filter')(todos, { completed: false }).).length;	killed 2696 ms
+MUTANT 73:	RFCAM Line 18:	$scope.remainingCount = $filter('filter')(()(todos, { completed: false }).length;	killed 2823 ms
+MUTANT 74:	RFCAM Line 24:	$scope.$on('$routeChangeSuccess', (function () {	killed 2571 ms
+MUTANT 75:	RFCAM Line 24:	$scope.$on('$routeChangeSuccess'scope.$on('$routeChangeSuccess', function () {	killed 2494 ms
+MUTANT 76:	RFCAM Line 46:	.finally(finally(function () {	killed 2484 ms
+MUTANT 77:	RFCAM Line 43:	.then(then(function success() {	killed 3026 ms
+MUTANT 78:	RFCAM Line 42:	store.insert(newTodo)()	killed 3291 ms
+MUTANT 79:	RFCAM Line 54:	$scope.originalTodo = angular.extend({}, (todo);	killed 3149 ms
+MUTANT 80:	RFCAM Line 54:	$scope.originalTodo = angular.extend({}, todo);({});	killed 3149 ms
+MUTANT 81:	RFCAM Line 84:	.finally(finally(function () {	killed 2802 ms
+MUTANT 82:	RFCAM Line 81:	.then(function success() {}, function error() {	survived 2883 ms
+MUTANT 83:	RFCAM Line 81:	.then(function success() {}then(function success() {}, function error() {	killed 2938 ms
+MUTANT 84:	RFCAM Line 80:	store[todo.title ? 'put' : 'delete'](todo)']()	survived 2963 ms
+MUTANT 85:	RFCAM Line 90:	todos[todos.indexOf(todo)]()] = $scope.originalTodo;	killed 2870 ms
+MUTANT 86:	RFCAM Line 97:	store.delete(todo);();	survived 3341 ms
+MUTANT 87:	RFCAM Line 101:	store.put(todo);();	survived 3264 ms
+MUTANT 88:	RFCAM Line 105:	if (angular.isDefined(completed))()) {	killed 3353 ms
+MUTANT 89:	RFCAM Line 109:	.then(function success() {}, function error() {	killed 4288 ms
+MUTANT 90:	RFCAM Line 109:	.then(function success() {}then(function success() {}, function error() {	killed 3383 ms
+MUTANT 91:	RFCAM Line 108:	store.put(todo, todos.indexOf(todo))	survived 4068 ms
+MUTANT 92:	RFCAM Line 108:	store.put(todo, todos.indexOf(todo)))	survived 4381 ms
+MUTANT 93:	RFCAM Line 108:	store.put(todo, todos.indexOf(todo))())	survived 4035 ms
+MUTANT 94:	RFCAM Line 119:	todos.forEach(odos.forEach(function (todo) {	killed 3916 ms
+MUTANT 95:	RFCAM Line 121:	$scope.toggleCompleted(todo, completed);	killed 3737 ms
+MUTANT 96:	RFCAM Line 121:	$scope.toggleCompleted(todo, completed);	killed 3731 ms
+MUTANT 97:	RFM Lines 9-125: Commented function TodoCtrl	killed 3830 ms
+MUTANT 98:	RFM Lines 17-21: Commented function (anonymous / assigned)	killed 4768 ms
+MUTANT 99:	RFM Lines 24-29: Commented function (anonymous / assigned)	killed 4192 ms
+MUTANT 100:	RFM Lines 31-49: Commented function (anonymous / assigned)	killed 3403 ms
+MUTANT 101:	RFM Lines 43-45: Commented function success	survived 4484 ms
+MUTANT 102:	RFM Lines 46-48: Commented function (anonymous / assigned)	survived 3923 ms
+MUTANT 103:	RFM Lines 51-55: Commented function (anonymous / assigned)	killed 3726 ms
+MUTANT 104:	RFM Lines 57-87: Commented function (anonymous / assigned)	killed 4441 ms
+MUTANT 105:	RFM Lines 81-81: Commented function success	killed 3351 ms
+MUTANT 106:	RFM Lines 81-83: Commented function error	survived 4270 ms
+MUTANT 107:	RFM Lines 84-86: Commented function (anonymous / assigned)	survived 3868 ms
+MUTANT 108:	RFM Lines 89-94: Commented function (anonymous / assigned)	killed 4769 ms
+MUTANT 109:	RFM Lines 96-98: Commented function (anonymous / assigned)	survived 5019 ms
+MUTANT 110:	RFM Lines 100-102: Commented function (anonymous / assigned)	survived 3197 ms
+MUTANT 111:	RFM Lines 104-112: Commented function (anonymous / assigned)	killed 4275 ms
+MUTANT 112:	RFM Lines 109-109: Commented function success	killed 4114 ms
+MUTANT 113:	RFM Lines 109-111: Commented function error	survived 3940 ms
+MUTANT 114:	RFM Lines 114-116: Commented function (anonymous / assigned)	killed 4579 ms
+MUTANT 115:	RFM Lines 118-124: Commented function (anonymous / assigned)	killed 3974 ms
+MUTANT 116:	RFM Lines 119-123: Commented function (anonymous / assigned)	killed 3997 ms
+MUTANT 117:	RLM Commented line 12:	var todos = $scope.todos = store.todos;	killed 4013 ms
+MUTANT 118:	RLM Commented line 14:	$scope.newTodo = '';	survived 3683 ms
+MUTANT 119:	RLM Commented line 15:	$scope.editedTodo = null;	killed 3837 ms
+MUTANT 120:	RLM Commented line 18:	$scope.remainingCount = $filter('filter')(todos, { completed: false }).length;	killed 3615 ms
+MUTANT 121:	RLM Commented line 19:	$scope.completedCount = todos.length - $scope.remainingCount;	killed 4508 ms
+MUTANT 122:	RLM Commented line 20:	$scope.allChecked = !$scope.remainingCount;	killed 3741 ms
+MUTANT 123:	RLM Commented line 25:	var status = $scope.status = $routeParams.status || '';	killed 4270 ms
+MUTANT 124:	RLM Commented line 38:	return;	killed 4156 ms
+MUTANT 125:	RLM Commented line 41:	$scope.saving = true;	survived 3163 ms
+MUTANT 126:	RLM Commented line 44:	$scope.newTodo = '';	survived 4256 ms
+MUTANT 127:	RLM Commented line 47:	$scope.saving = false;	survived 3810 ms
+MUTANT 128:	RLM Commented line 52:	$scope.editedTodo = todo;	survived 3948 ms
+MUTANT 129:	RLM Commented line 54:	$scope.originalTodo = angular.extend({}, todo);	killed 4111 ms
+MUTANT 130:	RLM Commented line 61:	$scope.saveEvent = null;	survived 3833 ms
+MUTANT 131:	RLM Commented line 62:	return;	survived 3999 ms
+MUTANT 132:	RLM Commented line 65:	$scope.saveEvent = event;	survived 4162 ms
+MUTANT 133:	RLM Commented line 69:	$scope.reverted = null;	survived 3288 ms
+MUTANT 134:	RLM Commented line 70:	return;	survived 4394 ms
+MUTANT 135:	RLM Commented line 73:	todo.title = todo.title.trim();	killed 3684 ms
+MUTANT 136:	RLM Commented line 76:	$scope.editedTodo = null;	survived 4160 ms
+MUTANT 137:	RLM Commented line 77:	return;	survived 3988 ms
+MUTANT 138:	RLM Commented line 82:	todo.title = $scope.originalTodo.title;	survived 3954 ms
+MUTANT 139:	RLM Commented line 85:	$scope.editedTodo = null;	survived 3925 ms
+MUTANT 140:	RLM Commented line 90:	todos[todos.indexOf(todo)] = $scope.originalTodo;	killed 3706 ms
+MUTANT 141:	RLM Commented line 91:	$scope.editedTodo = null;	survived 3731 ms
+MUTANT 142:	RLM Commented line 92:	$scope.originalTodo = null;	survived 4007 ms
+MUTANT 143:	RLM Commented line 93:	$scope.reverted = true;	survived 3717 ms
+MUTANT 144:	RLM Commented line 97:	store.delete(todo);	survived 4226 ms
+MUTANT 145:	RLM Commented line 101:	store.put(todo);	survived 4549 ms
+MUTANT 146:	RLM Commented line 106:	todo.completed = completed;	killed 4246 ms
+MUTANT 147:	RLM Commented line 110:	todo.completed = !todo.completed;	survived 4502 ms
+MUTANT 148:	RLM Commented line 115:	store.clearCompleted();	killed 4023 ms
+MUTANT 149:	RLM Commented line 121:	$scope.toggleCompleted(todo, completed);	killed 4122 ms
+MUTANT 150:	ROPM Line 18:	$scope.remainingCount = $filter('filter')(todos, {  completed: false }).length;	killed 4000 ms
+MUTANT 151:	ROPM Line 27:	{  completed: false } : (status === 'completed') ?	survived 4174 ms
+MUTANT 152:	ROPM Line 28:	{  completed: true } : {};	killed 4121 ms
+MUTANT 153:	ROPM Line 33:	title: $scope.newTodo.trim(),	killed 3007 ms
+MUTANT 154:	ROPM Line 34:	completed: false	survived 3854 ms
+MUTANT 155:	SLM Line 8:	angular.module('todomvc')('')...	killed 4284 ms
+MUTANT 156:	SLM Line 8:	angular.module('todomvcHmhHuur')...	killed 3647 ms
+MUTANT 157:	SLM Line 9:	.controller('TodoCtrl',('', function TodoCtrl($scope, $routeParams, $filter, store) {...	killed 4209 ms
+MUTANT 158:	SLM Line 9:	.controller('TodoCtrlnBUgamnD', function TodoCtrl($scope, $routeParams, $filter, store) {...	killed 3521 ms
+MUTANT 159:	SLM Line 14:	$scope.newTodo = '';'Fb4KxKHGub';...	survived 4016 ms
+MUTANT 160:	SLM Line 17:	$scope.$watch('todos',('', function () {...	killed 3965 ms
+MUTANT 161:	SLM Line 17:	$scope.$watch('todosTzr3b', function () {...	killed 3903 ms
+MUTANT 162:	SLM Line 18:	$scope.remainingCount = $filter('filter')(('')(todos, { completed: false }).length;...	killed 4344 ms
+MUTANT 163:	SLM Line 18:	$scope.remainingCount = $filter('filterziLXQC')(todos, { completed: false }).length;...	killed 3792 ms
+MUTANT 164:	SLM Line 24:	$scope.$on('$routeChangeSuccess',('', function () {...	killed 3481 ms
+MUTANT 165:	SLM Line 24:	$scope.$on('$routeChangeSuccess('pCscSbynKEMWobU53Ab', function () {...	killed 3951 ms
+MUTANT 166:	SLM Line 25:	var status = $scope.status = $routeParams.status || '';'Ek9aggScrx';...	killed 3928 ms
+MUTANT 167:	SLM Line 26:	$scope.statusFilter = (status === 'active')'') ?...	killed 3753 ms
+MUTANT 168:	SLM Line 26:	$scope.statusFilter = (status === 'activexQvrZy') ?...	survived 3768 ms
+MUTANT 169:	SLM Line 27:	{ completed: false } : (status === 'completed')'') ?...	killed 3840 ms
+MUTANT 170:	SLM Line 27:	{ completed: false } : (status === 'completedARMvCLB2G') ?...	killed 4022 ms
+MUTANT 171:	SLM Line 44:	$scope.newTodo = '';'ikaSa9U1TS';...	survived 3642 ms
+MUTANT 172:	SLM Line 60:	if (event === 'blur''' && $scope.saveEvent === 'submit') {...	survived 3718 ms
+MUTANT 173:	SLM Line 60:	if (event === 'blurKg1L' && $scope.saveEvent === 'submit') {...	survived 3901 ms
+MUTANT 174:	SLM Line 60:	if (event === 'blur' && $scope.saveEvent === 'submit')'') {...	survived 3996 ms
+MUTANT 175:	SLM Line 60:	if (event === 'blur' && $scope.saveEvent === 'submitEoxufq') {...	survived 4195 ms
+MUTANT 176:	SLM Line 80:	store[todo.title ? 'put''' : 'delete'](todo)...	killed 4106 ms
+MUTANT 177:	SLM Line 80:	store[todo.title ? 'putPnh' : 'delete'](todo)...	killed 4162 ms
+MUTANT 178:	SLM Line 80:	store[todo.title ? 'put' : 'delete'](''](todo)...	killed 3527 ms
+MUTANT 179:	SLM Line 80:	store[todo.title ? 'put' : 'deleteo3R7Pe'](todo)...	killed 3651 ms
+
+Running mutants for src/directives/todoEscape.js
+MUTANT 180:	NCM Line 15:	if (event.keyCode ===!== ESCAPE_KEY) {	survived 4387 ms
+MUTANT 181:	NLM Line 11:	var ESCAPE_KEY = 270;...	survived 3831 ms
+MUTANT 182:	NLM Line 11:	var ESCAPE_KEY = 2726;...	survived 3913 ms
+MUTANT 183:	NLM Line 11:	var ESCAPE_KEY = 2728;...	survived 4982 ms
+MUTANT 184:	NLM Line 11:	var ESCAPE_KEY = 27128762;...	survived 4212 ms
+MUTANT 185:	RCM Line 15:	if (event.keyCode === ESCAPE_KEYtrue) {	survived 4094 ms
+MUTANT 186:	RCM Line 15:	if (event.keyCode === ESCAPE_KEYfalse) {	survived 3736 ms
+MUTANT 187:	RFCAM Line 8:	.directive('todoEscape', (function () {	survived 3183 ms
+MUTANT 188:	RFCAM Line 8:	.directive('todoEscape'directive('todoEscape', function () {	killed 3336 ms
+MUTANT 189:	RFCAM Line 7:	angular.module('todomvc')()	killed 3357 ms
+MUTANT 190:	RFCAM Line 14:	elem.bind('keydown', (function (event) {	survived 3361 ms
+MUTANT 191:	RFCAM Line 14:	elem.bind('keydown'lem.bind('keydown', function (event) {	killed 2914 ms
+MUTANT 192:	RFCAM Line 16:	scope.$apply(attrs.todoEscape);();	survived 3293 ms
+MUTANT 193:	RFCAM Line 20:	scope.$on('$destroy', (function () {	survived 3138 ms
+MUTANT 194:	RFCAM Line 20:	scope.$on('$destroy'cope.$on('$destroy', function () {	killed 2729 ms
+MUTANT 195:	RFCAM Line 21:	elem.unbind('keydown');();	survived 3024 ms
+MUTANT 196:	RFM Lines 8-24: Commented function (anonymous / assigned)	survived 3451 ms
+MUTANT 197:	RFM Lines 13-23: Commented function (anonymous / assigned)	survived 3437 ms
+MUTANT 198:	RFM Lines 14-18: Commented function (anonymous / assigned)	survived 2986 ms
+MUTANT 199:	RFM Lines 20-22: Commented function (anonymous / assigned)	survived 2847 ms
+MUTANT 200:	RLM Commented line 11:	var ESCAPE_KEY = 27;	survived 2842 ms
+MUTANT 201:	RLM Commented line 16:	scope.$apply(attrs.todoEscape);	survived 3160 ms
+MUTANT 202:	RLM Commented line 21:	elem.unbind('keydown');	survived 3357 ms
+MUTANT 203:	SLM Line 7:	angular.module('todomvc')('')...	killed 2850 ms
+MUTANT 204:	SLM Line 7:	angular.module('todomvc8kWKpt5')...	killed 2788 ms
+MUTANT 205:	SLM Line 8:	.directive('todoEscape',('', function () {...	killed 3127 ms
+MUTANT 206:	SLM Line 8:	.directive('todoEscaped6iA9VcOgP', function () {...	survived 2891 ms
+MUTANT 207:	SLM Line 14:	elem.bind('keydown',('', function (event) {...	survived 2656 ms
+MUTANT 208:	SLM Line 14:	elem.bind('keydownTTTL3D3', function (event) {...	survived 2728 ms
+MUTANT 209:	SLM Line 20:	scope.$on('$destroy',('', function () {...	survived 2811 ms
+MUTANT 210:	SLM Line 20:	scope.$on('$destroy('rmrpZ775', function () {...	survived 2882 ms
+MUTANT 211:	SLM Line 21:	elem.unbind('keydown');('');...	survived 2792 ms
+MUTANT 212:	SLM Line 21:	elem.unbind('keydownVA5wTtT');...	survived 2977 ms
+
+Running mutants for src/directives/todoFocus.js
+MUTANT 213:	BLM Line 16:	}, 0, falsetrue);...	survived 2890 ms
+MUTANT 214:	NLM Line 15:	elem[0[-1].focus();...	survived 2793 ms
+MUTANT 215:	NLM Line 15:	elem[01].focus();...	survived 3104 ms
+MUTANT 216:	NLM Line 15:	elem[0362145].focus();...	survived 2615 ms
+MUTANT 217:	NLM Line 16:	}, 0-1, false);...	survived 2672 ms
+MUTANT 218:	NLM Line 16:	}, 01, false);...	survived 3067 ms
+MUTANT 219:	NLM Line 16:	}, 0659322, false);...	survived 2745 ms
+MUTANT 220:	RFCAM Line 8:	.directive('todoFocus', (function todoFocus($timeout) {	killed 2674 ms
+MUTANT 221:	RFCAM Line 8:	.directive('todoFocus'directive('todoFocus', function todoFocus($timeout) {	killed 3160 ms
+MUTANT 222:	RFCAM Line 7:	angular.module('todomvc')()	killed 2732 ms
+MUTANT 223:	RFCAM Line 12:	scope.$watch(attrs.todoFocus, function (newVal) {	killed 2666 ms
+MUTANT 224:	RFCAM Line 12:	scope.$watch(attrs.todoFocuscope.$watch(attrs.todoFocus, function (newVal) {	killed 2603 ms
+MUTANT 225:	RFCAM Line 14:	$timeout(timeout(function () {	killed 2848 ms
+MUTANT 226:	RFCAM Line 16:	}, 0, false);	survived 2907 ms
+MUTANT 227:	RFCAM Line 16:	}, 0, false);	survived 2718 ms
+MUTANT 228:	RFM Lines 8-20: Commented function todoFocus	killed 2721 ms
+MUTANT 229:	RFM Lines 11-19: Commented function (anonymous / assigned)	killed 2795 ms
+MUTANT 230:	RFM Lines 12-18: Commented function (anonymous / assigned)	killed 2721 ms
+MUTANT 231:	RFM Lines 14-16: Commented function (anonymous / assigned)	killed 2961 ms
+MUTANT 232:	RLM Commented line 15:	elem[0].focus();	survived 2832 ms
+MUTANT 233:	SLM Line 7:	angular.module('todomvc')('')...	killed 2988 ms
+MUTANT 234:	SLM Line 7:	angular.module('todomvcODx0NPT')...	killed 3432 ms
+MUTANT 235:	SLM Line 8:	.directive('todoFocus',('', function todoFocus($timeout) {...	killed 2688 ms
+MUTANT 236:	SLM Line 8:	.directive('todoFocusl0KMvvXrA', function todoFocus($timeout) {...	killed 2799 ms
+
+Running mutants for src/services/todoStorage.js
+MUTANT 237:	NLM Line 37:	var originalTodos = store.todos.slice(0(-1);...	survived 2996 ms
+MUTANT 238:	NLM Line 37:	var originalTodos = store.todos.slice(01);...	survived 2811 ms
+MUTANT 239:	NLM Line 37:	var originalTodos = store.todos.slice(0459470);...	survived 2697 ms
+MUTANT 240:	NLM Line 52:	var originalTodos = store.todos.slice(0(-1);...	survived 3027 ms
+MUTANT 241:	NLM Line 52:	var originalTodos = store.todos.slice(01);...	survived 2724 ms
+MUTANT 242:	NLM Line 52:	var originalTodos = store.todos.slice(0888445);...	survived 2817 ms
+MUTANT 243:	NLM Line 54:	store.todos.splice(store.todos.indexOf(todo), 10);...	survived 2672 ms
+MUTANT 244:	NLM Line 54:	store.todos.splice(store.todos.indexOf(todo), 12);...	survived 2831 ms
+MUTANT 245:	NLM Line 54:	store.todos.splice(store.todos.indexOf(todo), 1129153);...	survived 2784 ms
+MUTANT 246:	NLM Line 69:	var originalTodos = store.todos.slice(0(-1);...	survived 2724 ms
+MUTANT 247:	NLM Line 69:	var originalTodos = store.todos.slice(01);...	survived 2893 ms
+MUTANT 248:	NLM Line 69:	var originalTodos = store.todos.slice(089885);...	survived 2713 ms
+MUTANT 249:	NLM Line 124:	store.todos.splice(store.todos.indexOf(todo), 10);...	killed 2967 ms
+MUTANT 250:	NLM Line 124:	store.todos.splice(store.todos.indexOf(todo), 12);...	killed 2965 ms
+MUTANT 251:	NLM Line 124:	store.todos.splice(store.todos.indexOf(todo), 1658912);...	killed 2764 ms
+MUTANT 252:	RFCAM Line 90:	.factory('localStorage', (function ($q) {	killed 2817 ms
+MUTANT 253:	RFCAM Line 90:	.factory('localStorage'factory('localStorage', function ($q) {	killed 3076 ms
+MUTANT 254:	RFCAM Line 24:	.factory('api', (function ($resource) {	survived 2769 ms
+MUTANT 255:	RFCAM Line 24:	.factory('api'factory('api', function ($resource) {	killed 2673 ms
+MUTANT 256:	RFCAM Line 11:	.factory('todoStorage', (function ($http, $injector) {	survived 3036 ms
+MUTANT 257:	RFCAM Line 11:	.factory('todoStorage'factory('todoStorage', function ($http, $injector) {	killed 2842 ms
+MUTANT 258:	RFCAM Line 10:	angular.module('todomvc')()	killed 2657 ms
+MUTANT 259:	RFCAM Line 17:	.then(then(function () {	killed 2627 ms
+MUTANT 260:	RFCAM Line 19:	}, function () {	survived 3039 ms
+MUTANT 261:	RFCAM Line 16:	return $http.get('/api')()	survived 2689 ms
+MUTANT 262:	RFCAM Line 18:	return $injector.get('api');();	survived 2679 ms
+MUTANT 263:	RFCAM Line 20:	return $injector.get('localStorage');();	survived 2737 ms
+MUTANT 264:	RFCAM Line 30:	api: $resource('/api/todos/:id', (null,	survived 2752 ms
+MUTANT 265:	RFCAM Line 30:	api: $resource('/api/todos/:id', null,	survived 2645 ms
+MUTANT 266:	RFCAM Line 31:	{	killed 2843 ms
+MUTANT 267:	RFCAM Line 37:	var originalTodos = store.todos.slice(0);();	survived 2715 ms
+MUTANT 268:	RFCAM Line 39:	var incompleteTodos = store.todos.filter(ar incompleteTodos = store.todos.filter(function (todo) {	killed 2581 ms
+MUTANT 269:	RFCAM Line 43:	angular.copy(incompleteTodos, store.todos);	survived 2961 ms
+MUTANT 270:	RFCAM Line 43:	angular.copy(incompleteTodos, store.todos);	survived 2722 ms
+MUTANT 271:	RFCAM Line 45:	return store.api.delete(turn store.api.delete(function () {	killed 2575 ms
+MUTANT 272:	RFCAM Line 46:	}, function error() {	survived 2892 ms
+MUTANT 273:	RFCAM Line 47:	angular.copy(originalTodos, store.todos);	survived 2766 ms
+MUTANT 274:	RFCAM Line 47:	angular.copy(originalTodos, store.todos);	survived 2629 ms
+MUTANT 275:	RFCAM Line 52:	var originalTodos = store.todos.slice(0);();	survived 3015 ms
+MUTANT 276:	RFCAM Line 54:	store.todos.splice(store.todos.indexOf(todo), 1);	survived 2893 ms
+MUTANT 277:	RFCAM Line 54:	store.todos.splice(store.todos.indexOf(todo), 1);));	survived 2910 ms
+MUTANT 278:	RFCAM Line 54:	store.todos.splice(store.todos.indexOf(todo),(), 1);	survived 2844 ms
+MUTANT 279:	RFCAM Line 55:	return store.api.delete({ id: todo.id },(	survived 3036 ms
+MUTANT 280:	RFCAM Line 56:	functionunction () {	killed 2698 ms
+MUTANT 281:	RFCAM Line 57:	}, function error() {	survived 2609 ms
+MUTANT 282:	RFCAM Line 58:	angular.copy(originalTodos, store.todos);	survived 2920 ms
+MUTANT 283:	RFCAM Line 58:	angular.copy(originalTodos, store.todos);	survived 2642 ms
+MUTANT 284:	RFCAM Line 63:	return store.api.query(eturn store.api.query(function (resp) {	killed 2750 ms
+MUTANT 285:	RFCAM Line 64:	angular.copy(resp, store.todos);	survived 2823 ms
+MUTANT 286:	RFCAM Line 64:	angular.copy(resp, store.todos);	survived 2603 ms
+MUTANT 287:	RFCAM Line 69:	var originalTodos = store.todos.slice(0);();	survived 2926 ms
+MUTANT 288:	RFCAM Line 71:	return store.api.save(todo,	survived 2623 ms
+MUTANT 289:	RFCAM Line 72:	functionunction success(resp) {	killed 2610 ms
+MUTANT 290:	RFCAM Line 75:	}, function error() {	survived 2861 ms
+MUTANT 291:	RFCAM Line 74:	store.todos.push(todo);();	survived 2623 ms
+MUTANT 292:	RFCAM Line 76:	angular.copy(originalTodos, store.todos);	survived 2658 ms
+MUTANT 293:	RFCAM Line 76:	angular.copy(originalTodos, store.todos);	survived 3160 ms
+MUTANT 294:	RFCAM Line 82:	return store.api.update({ id: (todo.id }, todo)	survived 2716 ms
+MUTANT 295:	RFCAM Line 82:	return store.api.update({ id: todo.id }, todo)})	survived 2621 ms
+MUTANT 296:	RFCAM Line 99:	return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');();	survived 2814 ms
+MUTANT 297:	RFCAM Line 99:	return JSON.parse(localStorage.getItem(STORAGE_ID)() || '[]');	survived 2844 ms
+MUTANT 298:	RFCAM Line 103:	localStorage.setItem(STORAGE_ID, JSON.stringify(todos));	survived 2837 ms
+MUTANT 299:	RFCAM Line 103:	localStorage.setItem(STORAGE_ID, JSON.stringify(todos)););	survived 2749 ms
+MUTANT 300:	RFCAM Line 103:	localStorage.setItem(STORAGE_ID, JSON.stringify(todos));());	survived 3022 ms
+MUTANT 301:	RFCAM Line 109:	var incompleteTodos = store.todos.filter(ar incompleteTodos = store.todos.filter(function (todo) {	killed 2551 ms
+MUTANT 302:	RFCAM Line 113:	angular.copy(incompleteTodos, store.todos);	killed 2781 ms
+MUTANT 303:	RFCAM Line 113:	angular.copy(incompleteTodos, store.todos);	killed 2896 ms
+MUTANT 304:	RFCAM Line 115:	store._saveToLocalStorage(store.todos);();	survived 2619 ms
+MUTANT 305:	RFCAM Line 116:	deferred.resolve(store.todos);();	survived 3061 ms
+MUTANT 306:	RFCAM Line 124:	store.todos.splice(store.todos.indexOf(todo), 1);	killed 2636 ms
+MUTANT 307:	RFCAM Line 124:	store.todos.splice(store.todos.indexOf(todo), 1);));	killed 2746 ms
+MUTANT 308:	RFCAM Line 124:	store.todos.splice(store.todos.indexOf(todo),(), 1);	survived 3057 ms
+MUTANT 309:	RFCAM Line 126:	store._saveToLocalStorage(store.todos);();	survived 2697 ms
+MUTANT 310:	RFCAM Line 127:	deferred.resolve(store.todos);();	survived 2693 ms
+MUTANT 311:	RFCAM Line 135:	angular.copy(store._getFromLocalStorage(), store.todos);	survived 2968 ms
+MUTANT 312:	RFCAM Line 135:	angular.copy(store._getFromLocalStorage(), store.todos);());	survived 2786 ms
+MUTANT 313:	RFCAM Line 136:	deferred.resolve(store.todos);();	survived 2729 ms
+MUTANT 314:	RFCAM Line 144:	store.todos.push(todo);();	killed 2685 ms
+MUTANT 315:	RFCAM Line 146:	store._saveToLocalStorage(store.todos);();	killed 2831 ms
+MUTANT 316:	RFCAM Line 147:	deferred.resolve(store.todos);();	survived 2680 ms
+MUTANT 317:	RFCAM Line 157:	store._saveToLocalStorage(store.todos);();	killed 2805 ms
+MUTANT 318:	RFCAM Line 158:	deferred.resolve(store.todos);();	survived 2829 ms
+MUTANT 319:	RFM Lines 11-22: Commented function (anonymous / assigned)	survived 2672 ms
+MUTANT 320:	RFM Lines 17-19: Commented function (anonymous / assigned)	killed 2890 ms
+MUTANT 321:	RFM Lines 19-21: Commented function (anonymous / assigned)	killed 2871 ms
+MUTANT 322:	RFM Lines 24-88: Commented function (anonymous / assigned)	survived 2649 ms
+MUTANT 323:	RFM Lines 36-49: Commented function (anonymous / assigned)	survived 2971 ms
+MUTANT 324:	RFM Lines 39-41: Commented function (anonymous / assigned)	survived 2859 ms
+MUTANT 325:	RFM Lines 45-46: Commented function (anonymous / assigned)	killed 2460 ms
+MUTANT 326:	RFM Lines 46-48: Commented function error	killed 2629 ms
+MUTANT 327:	RFM Lines 51-60: Commented function (anonymous / assigned)	survived 2630 ms
+MUTANT 328:	RFM Lines 56-57: Commented function (anonymous / assigned)	killed 2513 ms
+MUTANT 329:	RFM Lines 57-59: Commented function error	killed 2507 ms
+MUTANT 330:	RFM Lines 62-66: Commented function (anonymous / assigned)	survived 2640 ms
+MUTANT 331:	RFM Lines 63-65: Commented function (anonymous / assigned)	survived 2573 ms
+MUTANT 332:	RFM Lines 68-79: Commented function (anonymous / assigned)	survived 2589 ms
+MUTANT 333:	RFM Lines 72-75: Commented function success	killed 2629 ms
+MUTANT 334:	RFM Lines 75-77: Commented function error	killed 2529 ms
+MUTANT 335:	RFM Lines 81-84: Commented function (anonymous / assigned)	survived 2587 ms
+MUTANT 336:	RFM Lines 90-165: Commented function (anonymous / assigned)	killed 2703 ms
+MUTANT 337:	RFM Lines 98-100: Commented function (anonymous / assigned)	survived 2629 ms
+MUTANT 338:	RFM Lines 102-104: Commented function (anonymous / assigned)	survived 2878 ms
+MUTANT 339:	RFM Lines 106-119: Commented function (anonymous / assigned)	killed 2796 ms
+MUTANT 340:	RFM Lines 109-111: Commented function (anonymous / assigned)	killed 2721 ms
+MUTANT 341:	RFM Lines 121-130: Commented function (anonymous / assigned)	killed 2890 ms
+MUTANT 342:	RFM Lines 132-139: Commented function (anonymous / assigned)	survived 2707 ms
+MUTANT 343:	RFM Lines 141-150: Commented function (anonymous / assigned)	killed 3066 ms
+MUTANT 344:	RFM Lines 152-161: Commented function (anonymous / assigned)	killed 2704 ms
+MUTANT 345:	RLM Commented line 18:	return $injector.get('api');	survived 3652 ms
+MUTANT 346:	RLM Commented line 20:	return $injector.get('localStorage');	survived 2723 ms
+MUTANT 347:	RLM Commented line 37:	var originalTodos = store.todos.slice(0);	survived 2593 ms
+MUTANT 348:	RLM Commented line 40:	return !todo.completed;	survived 3092 ms
+MUTANT 349:	RLM Commented line 43:	angular.copy(incompleteTodos, store.todos);	survived 2694 ms
+MUTANT 350:	RLM Commented line 47:	angular.copy(originalTodos, store.todos);	survived 2844 ms
+MUTANT 351:	RLM Commented line 52:	var originalTodos = store.todos.slice(0);	survived 2564 ms
+MUTANT 352:	RLM Commented line 54:	store.todos.splice(store.todos.indexOf(todo), 1);	survived 2941 ms
+MUTANT 353:	RLM Commented line 58:	angular.copy(originalTodos, store.todos);	survived 2715 ms
+MUTANT 354:	RLM Commented line 64:	angular.copy(resp, store.todos);	survived 2958 ms
+MUTANT 355:	RLM Commented line 69:	var originalTodos = store.todos.slice(0);	survived 2555 ms
+MUTANT 356:	RLM Commented line 73:	todo.id = resp.id;	survived 2967 ms
+MUTANT 357:	RLM Commented line 74:	store.todos.push(todo);	survived 2701 ms
+MUTANT 358:	RLM Commented line 76:	angular.copy(originalTodos, store.todos);	survived 2541 ms
+MUTANT 359:	RLM Commented line 87:	return store;	survived 2807 ms
+MUTANT 360:	RLM Commented line 93:	var STORAGE_ID = 'todos-angularjs';	survived 2624 ms
+MUTANT 361:	RLM Commented line 99:	return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');	survived 2913 ms
+MUTANT 362:	RLM Commented line 103:	localStorage.setItem(STORAGE_ID, JSON.stringify(todos));	survived 2962 ms
+MUTANT 363:	RLM Commented line 107:	var deferred = $q.defer();	killed 2644 ms
+MUTANT 364:	RLM Commented line 110:	return !todo.completed;	killed 3156 ms
+MUTANT 365:	RLM Commented line 113:	angular.copy(incompleteTodos, store.todos);	killed 2714 ms
+MUTANT 366:	RLM Commented line 115:	store._saveToLocalStorage(store.todos);	survived 2605 ms
+MUTANT 367:	RLM Commented line 116:	deferred.resolve(store.todos);	survived 3171 ms
+MUTANT 368:	RLM Commented line 118:	return deferred.promise;	survived 2691 ms
+MUTANT 369:	RLM Commented line 122:	var deferred = $q.defer();	killed 2609 ms
+MUTANT 370:	RLM Commented line 124:	store.todos.splice(store.todos.indexOf(todo), 1);	killed 2931 ms
+MUTANT 371:	RLM Commented line 126:	store._saveToLocalStorage(store.todos);	survived 2603 ms
+MUTANT 372:	RLM Commented line 127:	deferred.resolve(store.todos);	survived 2677 ms
+MUTANT 373:	RLM Commented line 129:	return deferred.promise;	killed 2793 ms
+MUTANT 374:	RLM Commented line 133:	var deferred = $q.defer();	survived 3003 ms
+MUTANT 375:	RLM Commented line 135:	angular.copy(store._getFromLocalStorage(), store.todos);	survived 2578 ms
+MUTANT 376:	RLM Commented line 136:	deferred.resolve(store.todos);	survived 3061 ms
+MUTANT 377:	RLM Commented line 138:	return deferred.promise;	survived 2845 ms
+MUTANT 378:	RLM Commented line 142:	var deferred = $q.defer();	killed 2917 ms
+MUTANT 379:	RLM Commented line 144:	store.todos.push(todo);	killed 2716 ms
+MUTANT 380:	RLM Commented line 146:	store._saveToLocalStorage(store.todos);	survived 2790 ms
+MUTANT 381:	RLM Commented line 147:	deferred.resolve(store.todos);	survived 3036 ms
+MUTANT 382:	RLM Commented line 149:	return deferred.promise;	killed 2638 ms
+MUTANT 383:	RLM Commented line 153:	var deferred = $q.defer();	killed 2902 ms
+MUTANT 384:	RLM Commented line 155:	store.todos[index] = todo;	survived 2750 ms
+MUTANT 385:	RLM Commented line 157:	store._saveToLocalStorage(store.todos);	survived 3008 ms
+MUTANT 386:	RLM Commented line 158:	deferred.resolve(store.todos);	survived 2647 ms
+MUTANT 387:	RLM Commented line 160:	return deferred.promise;	killed 2877 ms
+MUTANT 388:	RLM Commented line 164:	return store;	killed 2770 ms
+MUTANT 389:	ROPM Line 28:	todos: [],	survived 3033 ms
+MUTANT 390:	ROPM Lines 30-34: Commented property api	survived 2715 ms
+MUTANT 391:	ROPM Line 32:	update: { method:'PUT' }	survived 2845 ms
+MUTANT 392:	ROPM Line 32:	update: {  method:'PUT' }	survived 2901 ms
+MUTANT 393:	ROPM Lines 36-49: Commented property clearCompleted	survived 2868 ms
+MUTANT 394:	ROPM Lines 51-60: Commented property delete	survived 2826 ms
+MUTANT 395:	ROPM Line 55:	return store.api.delete({  id: todo.id },	survived 3019 ms
+MUTANT 396:	ROPM Lines 62-66: Commented property get	survived 2817 ms
+MUTANT 397:	ROPM Lines 68-79: Commented property insert	survived 2771 ms
+MUTANT 398:	ROPM Lines 81-84: Commented property put	survived 2636 ms
+MUTANT 399:	ROPM Line 82:	return store.api.update({  id: todo.id }, todo)	survived 2833 ms
+MUTANT 400:	ROPM Line 96:	todos: [],	survived 2712 ms
+MUTANT 401:	ROPM Lines 98-100: Commented property _getFromLocalStorage	survived 2931 ms
+MUTANT 402:	ROPM Lines 102-104: Commented property _saveToLocalStorage	survived 2669 ms
+MUTANT 403:	ROPM Lines 106-119: Commented property clearCompleted	killed 3004 ms
+MUTANT 404:	ROPM Lines 121-130: Commented property delete	killed 2640 ms
+MUTANT 405:	ROPM Lines 132-139: Commented property get	survived 2560 ms
+MUTANT 406:	ROPM Lines 141-150: Commented property insert	killed 2624 ms
+MUTANT 407:	ROPM Lines 152-161: Commented property put	killed 2719 ms
+MUTANT 408:	SLM Line 10:	angular.module('todomvc')('')...	killed 2449 ms
+MUTANT 409:	SLM Line 10:	angular.module('todomvc3B4O6ps')...	killed 2561 ms
+MUTANT 410:	SLM Line 11:	.factory('todoStorage',('', function ($http, $injector) {...	survived 2681 ms
+MUTANT 411:	SLM Line 11:	.factory('todoStorageKHTQTlrnSAW', function ($http, $injector) {...	survived 2612 ms
+MUTANT 412:	SLM Line 16:	return $http.get('/api')('')...	survived 2624 ms
+MUTANT 413:	SLM Line 16:	return $http.get('/api('kaiE')...	survived 2686 ms
+MUTANT 414:	SLM Line 18:	return $injector.get('api');('');...	survived 2628 ms
+MUTANT 415:	SLM Line 18:	return $injector.get('apiXnF');...	survived 2920 ms
+MUTANT 416:	SLM Line 20:	return $injector.get('localStorage');('');...	survived 2664 ms
+MUTANT 417:	SLM Line 20:	return $injector.get('localStoragetfuNyNkAu7i3');...	survived 2590 ms
+MUTANT 418:	SLM Line 24:	.factory('api',('', function ($resource) {...	survived 3082 ms
+MUTANT 419:	SLM Line 24:	.factory('apigHh', function ($resource) {...	survived 2641 ms
+MUTANT 420:	SLM Line 30:	api: $resource('/api/todos/:id',('', null,...	survived 2667 ms
+MUTANT 421:	SLM Line 30:	api: $resource('/api/todos/:id('5vSfgTLS3FXLNs', null,...	survived 3014 ms
+MUTANT 422:	SLM Line 32:	update: { method:'PUT':'' }...	survived 2623 ms
+MUTANT 423:	SLM Line 32:	update: { method:'PUTK21' }...	survived 2639 ms
+MUTANT 424:	SLM Line 90:	.factory('localStorage',('', function ($q) {...	killed 2921 ms
+MUTANT 425:	SLM Line 90:	.factory('localStorageurTyvkN0AigZ', function ($q) {...	killed 2649 ms
+MUTANT 426:	SLM Line 93:	var STORAGE_ID = 'todos-angularjs';'';...	survived 2640 ms
+MUTANT 427:	SLM Line 93:	var STORAGE_ID = 'todos-angularjsvwXfU0FiipTI7tO';...	survived 2730 ms
+MUTANT 428:	SLM Line 99:	return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');'');...	survived 2649 ms
+MUTANT 429:	SLM Line 99:	return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');'Nv');...	survived 2939 ms
+
+Out of 429 mutants, 179 were killed, 250 survived and 0 were discarded
+Mutant coverage: 41.72%
+Deleting copies...Done
+Mutode 153892640 finished. Took 23m 10.5s
+
